@@ -46,10 +46,6 @@ a {
     color: #FFFFFF;
 }
 
-.footer-navigation {
-    color: #FFFFFF;
-}
-
 .button {
     background: black;
     color: #FFFFFF;
@@ -63,6 +59,15 @@ a {
     border: none;
     text-transform: uppercase;
     display: block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
 }
 
 /* HEADER */
@@ -74,6 +79,10 @@ a {
     align-items: center;
     font-size: 14px;
     line-height: 19px;
+}
+
+#header-top {
+    margin-bottom: 80px;
 }
 
 .header-nav {
@@ -99,15 +108,60 @@ a {
     font-size: 14px;
     line-height: 19px;
 }
-/* MAIN */
-.title-first-type {
+
+/* slider */
+
+.slider {
+    background-image: url("images/slider1.jpg");
+    background-repeat: no-repeat;
+    background-color: #EEE4DB;
+    background-position: center bottom;
+
+    background: #EEE4DB no-repeat center bottom;
+    /* background-size: cover; */
+    margin-bottom: 90px;
+}
+
+.slider-content {
+    display: flex;
+}
+
+.slider-first-block {
+    margin-top: 89px;
+    margin-left: 133px;
+}
+
+.slider-title {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: bold;
     font-size: 40px;
-    line-height: 110%;   
+    line-height: 110%; 
+    margin-bottom: 20px; 
 }
 
-.slovenia-design {
+.slider-btn {
+    max-width: 161px;
+}
+
+.slider-img {
+   width: 635.49px;
+   margin-top: -89px;
+   margin-right: 99px;
+
+}
+.slider-second-block {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: #C29974;
+    color: #FFFFFF;     
+    display: flex;
+    justify-content: center;
+}
+
+.slider-item {
     font-family: "Crimson Text", Arial, sans-serif;
     font-style: italic;
     font-weight: normal;
@@ -115,38 +169,107 @@ a {
     line-height: 25px;
 }
 
-.free-shipping {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
-    background: #C29974;
+/* Products */
+
+.products {
+    margin-bottom: 90px;
 }
 
-.title-second-type {
+.products-title {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: left;
     font-size: 38px;
     line-height: 46px;
 }
 
-.title-third-type {
-    font-family: "Crimson Text", Arial, sans-serif;
-    font-style: italic;
-    font-weight: normal;
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px -20px;
+}
+
+.products-item {
+    width: 25%;
+    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.container-link {
+    position: relative;
+    text-align: center;
+}
+
+.title-link {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.title-four-type {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #AAAAAA;
+.products-info {
+    display: flex;
+    max-width: 680px;
+    margin-bottom: 0;
 }
 
+.btn-control {
+    border: none;
+    opacity: .5;
+    margin-right: 10px;
+    width: 30px;
+}
+
+.info_item {
+    margin-left: 20px;
+}
+
+/* delivery */
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.delivery-info {
+    max-width: 540px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 57px;
+}    
+
+.delivery-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 38px;
+    line-height: 46px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.delivery-input {
+    display: none;
+}    
+
+.delivery-input:checked {
+    font-weight: bold;
+}
+
+.delivery-btn {
+    max-width: 149px;
+}
+/* Стилизовать табы */
 .tabs-item {
     font-family: "Crimson Text", Arial, sans-serif;
     font-style: italic;
@@ -154,13 +277,249 @@ a {
     line-height: 32px;
 }
 
-/* Разобраться почему не работает */
-input[type="checkbox"]:checked {
+.checked {
+    font-weight: bold;
+    width: 326px;
+    background: rgba(112, 187, 220, 0.2);
+}
+
+/* Brands */
+
+.brands-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.brands-item {
+
+}
+
+/* Уточнить нужно ли */
+.brand-item {
+    opacity: .5;
+}
+
+.brand-item:hover {
+    opacity: 1;
+}
+
+.brand-item:active {
+    opacity: .2;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    max-width: 543px;
+    background: #E1F0F7;
+    margin-right: 57px;
+    padding: 10px 30px 35px;
+}
+
+.about-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 46px;
+    margin-top: -36px;
+    margin-bottom: 10px;
+}
+
+.about-title-second {
     font-family: "Crimson Text", Arial, sans-serif;
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 10px;
+}
 
-/* FOOTER */
+.about-item {
+    margin-bottom: 10px;
+}
+
+.about-btn {
+    margin-bottom: 35px;
+}
+
+.contacts-content {
+    max-width: 543px;
+    max-height: 209px;
+    background: #E1F0F7;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contacts-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 46px;
+    margin-top: -26px;
+    margin-bottom: 10px;
+}
+
+.contacts-item {
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 100px;
+}
+
+.footer-content  {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-first-block {
+    display: flex;
+}
+
+.footer-block-item {
+    margin: auto;
+    max-width: 380px;
+    margin-bottom: 52px;
+}
+
+.item_block {
+    margin-top: 0;
+}
+
+.form-container {
+    display: flex;
+}
+input[type="email"] {
+    background: #666666;
+    border: none;
+    max-width: 300px;
+}
+
+.footer-btn {
+    background: #000;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 80px;
+    padding: 9px 22px;    
+}
+
+.social-link:hover {
+    opacity: .5;
+}
+
+.social-link:active {
+    opacity: .2;
+}
+
+.footer-link {
+    color: #FFFFFF;
+}
+
+.footer-link:hover {
+    color: #A1A1A1;
+}
+
+.footer-link:active {
+    color: #696969;
+}
+
+.footer-list {
+    color: white;
+}
+
+div > h4 {
+    color: #AAAAAA;
+    border-bottom:2px solid #A2A2A2;
+}
+
+.footer-list {
+    color: #FFFFFF;
+}
+
+.social-list {
+    display: flex;
+    margin-top: 25px;
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.footer-copyright {
+    display: flex;
+    border-top:2px solid #A2A2A2;
+}
+
+.copyright-item {
+    margin:auto;
+}
+
+.copyright-link {
+    color: #A2A2A2;
+}
+
+.copyright-link:hover {
+    color:#FFFFFF;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
