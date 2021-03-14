@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Toys</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="#">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,141 +30,62 @@
         <a class="contacts" href="#">Contact us</a>
     </header>
     <main>
-        <h1>Toy for kids</h1>
+        <h1>Contact  Us</h1>
         <div class="breadcrumbs">
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Home</a>
                 </li>
                 <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Catalog</a>
-                </li>
-                <li class="breadcrumbs-item">
-                <span class="breadcrumbs-link  current">Toys</span>
+                <span class="breadcrumbs-link  current">Contact Us</span>
                 </li>
             </ul>
-        </div>
-        <section class="filter">
-            <h1 class="hidden">Filter</h1>
-            <form action="#" method="POST" class="form_body">
-                <div class="filter-cost">
-                    <p>Cost</p>
-                    <input type="range" id="cost" name="cost" min="0" max="500" value="100"> 
+        </div> 
+
+        <section class="contacts">
+            <div class="contacts-form">
+                <h1 class="hidden">Modal window</h1>
+        <form action="#" method="POST" class="form-body">
+            <fieldset class="form-fieldset">
+                <div class="form-item">
+                    <label for="form-name" class="form-label">Name</label>
+                    <input id="form-name" type="text" name="name" class="form-input">
                 </div>
-                     
-                <div class="filter-color">
-                    <p>Color</p>
-                    <ul class="color-checkbox">
-                        <li><input type="checkbox" name="black"checked> Black</li>
-                        <li><input type="checkbox" name="blue"> Blue</li>
-                        <li><input type="checkbox" name="green"> Green</li>
-                        <li><input type="checkbox" name="white"> White</li>
-                    </ul>
-                    
-                <div class="filter-delivery">
-                    <p>Delivery</p>
-                    <ul class="delivery-radio">
-                        <li><input type="radio" name="shipping" value="free shipping"> Free shipping</li>
-                        <li><input type="radio" name="shipping" value="fast shipping"checked> Fast shipping</li>
-                    </ul>
-
-                <div class="filter-amount">
-                    <p>Amount</p>
-                    <div class="amount-one">0-5</div>
-                    <div class="amount-second">10-20</div>
-                    <div class="amount-third">20-50</div>
-                <button class="submit">Aply</button>
-            </form>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <div class="form-item">
+                    <label for="form-phone" class="form-label">Phone</label>
+                    <input id="form-phone" type="tel" name="phone" class="form-input" pattern="+7 (908) 296-13-78">
+                </div>
+                <div class="form-item">
+                    <label for="form-email" class="form-label">Email</label>
+                    <input id="form-email" type="text" name="email" class="form-input">
+                </div>
+            </fieldset>
+            <fieldset class="form-fieldset">
+                <div class="form-item">
+                    <label for="form-message" class="form-label">Message</label>
+                    <textarea id="form-message" type="text" name="message" class="form-textarea"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="checkbox-fieldset">
+                <div class="checkbox">
+                    <input id="form-agreement" type="checkbox" name="agreement" class="checkbox-input">
+                    <label for="form-agreement" class="checkbox-label"><span>By clicking on the button, you consent to the processing of your personal data</span>></label>
+                </div>
+            </fieldset>
+            <button class="submit">Submit</button>
+        </form>
+            </div>
+            
+            <div class="support">
+                <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p>An expert is waiting to help you!</p>
+            </div>
         </section>
-
-        <section class="products">
-            <h2 class="hidden">Toys</h1>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/toy1.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>SHARKY BEAN BAG CHAIR COVER</p>
-                    </a>
-                    <p>$60.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy2.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>BRASS DECO FRAMES</p>
-                    </a>
-                    <p>$66.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy3.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>CIBO FULL APRON</p>
-                    </a>
-                    <p>$60.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy4.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>GATCHA GATCHA GUMBALL MACHINE</p>
-                    </a>
-                    <p>$56.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy5.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
-                    </a>
-                    <p>$29.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy6.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>TANGLE SPINNING TEA LIGHT</p>
-                    </a>
-                    <p>$56.00 USD</p>
-                </li>
-            </ul>
-        </section>
-        <div class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-item">
-                <span class="breadcrumbs-link  current"><svg width="5" height="12" viewBox="0 0 5 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.944 0.799999V12H2.352V2.88H0.112V0.799999H4.944Z" fill="#C29974"/>
-                    </svg>
-                    </span>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.992 9.888V12H0.528V10.32L4.848 6.24C5.30667 5.80267 5.616 5.42933 5.776 5.12C5.936 4.8 6.016 4.48533 6.016 4.176C6.016 3.728 5.86133 3.38667 5.552 3.152C5.25333 2.90667 4.81067 2.784 4.224 2.784C3.73333 2.784 3.29067 2.88 2.896 3.072C2.50133 3.25333 2.17067 3.53067 1.904 3.904L0.016 2.688C0.453333 2.03733 1.056 1.53067 1.824 1.168C2.592 0.794666 3.472 0.608 4.464 0.608C5.296 0.608 6.02133 0.746666 6.64 1.024C7.26933 1.29067 7.75467 1.67467 8.096 2.176C8.448 2.66667 8.624 3.248 8.624 3.92C8.624 4.528 8.496 5.09867 8.24 5.632C7.984 6.16533 7.488 6.77333 6.752 7.456L4.176 9.888H8.992Z" fill="#1E0606"/>
-                    </svg>
-                    </a>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.856 5.36C7.83733 5.52 8.58933 5.888 9.112 6.464C9.63467 7.02933 9.896 7.73333 9.896 8.576C9.896 9.22667 9.72533 9.82933 9.384 10.384C9.04267 10.928 8.52 11.3653 7.816 11.696C7.12267 12.0267 6.26933 12.192 5.256 12.192C4.46667 12.192 3.688 12.0907 2.92 11.888C2.16267 11.6747 1.51733 11.376 0.984 10.992L1.992 9.008C2.41867 9.328 2.90933 9.57867 3.464 9.76C4.02933 9.93067 4.60533 10.016 5.192 10.016C5.84267 10.016 6.35467 9.89333 6.728 9.648C7.10133 9.392 7.288 9.03467 7.288 8.576C7.288 7.65867 6.58933 7.2 5.192 7.2H4.008V5.488L6.312 2.88H1.544V0.799999H9.384V2.48L6.856 5.36Z" fill="#1E0606"/>
-                    </svg>
-                    </a>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.88 9.648H9.056V12H6.528V9.648H0.496V7.904L5.776 0.799999H8.496L3.6 7.536H6.608V5.44H9.056V7.536H10.88V9.648Z" fill="#1E0606"/>
-                    </svg>
-                    </a>
-                </li>
-            </ul>
-    </div>
     </main>
+
     <footer class="footer wrapper">
         <div class="footer-content container">
             <div class="footer-first-block">
