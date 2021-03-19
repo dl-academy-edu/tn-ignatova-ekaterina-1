@@ -10,10 +10,10 @@ body {
     line-height: 22px;
     font-style: normal;
     font-weight: normal;
-    color: 1E0606;
+    color: #1E0606;
 }
-
-a {
+/* не работает */
+.a {
     text-decoration: none;
     color: black;
 }
@@ -35,7 +35,7 @@ a {
 .container {
     max-width: 1180px;
     width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto; 
 }
 
 .wrapper {
@@ -70,24 +70,26 @@ a {
     background: #CFAF91;
 }
 
+.button:disabled {
+    background: #C1C1C1;
+}
+
 /* Header */
 
 .header {
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 50px;
+    margin-bottom: 80px;
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 19px;
 }
 
-#header-top {
-    margin-bottom: 80px;
-}
-
 .header-logo:hover {
     opacity: .5;
+    background: none;
 }
 
 .header-logo:active {
@@ -103,16 +105,17 @@ a {
     align-items: center;
 }
 
-.header-list:hover {
-    opacity: .5;
-}
-
-.header-list:active {
-    opacity: .2;
-}
-
 .header-item {
     margin-right: 20px;     
+}
+
+.header-item:hover {
+    opacity: .5;
+    background: none;
+}
+
+.header-item:active {
+    opacity: .2;
 }
 
 .header-search {
@@ -121,10 +124,12 @@ a {
 
 .header-search:hover {
     opacity: .5;
+    background: none;
 }
 
 .header-search:active {
     opacity: .2;
+    background: none;
 }
 
 .header-contacts {
@@ -136,10 +141,13 @@ a {
 
 .header-contacts:hover {
     opacity: .5;
+    background: none;
+    
 }
 
 .header-contacts:active {
     opacity: .2;
+    background: none;
 }
 
 /* slider */
@@ -172,12 +180,21 @@ a {
 }
 
 .slider-img {
-   width: 635.49px;
+   width: 636px;
    margin-top: -89px;
+   margin-bottom: 0;
    margin-right: 99px;
-
 }
-.slider-second-block {
+
+.slider-item {
+    font-family: "Crimson Text", Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.slider-info {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
@@ -187,14 +204,8 @@ a {
     color: #FFFFFF;     
     display: flex;
     justify-content: center;
-}
-
-.slider-item {
-    font-family: "Crimson Text", Arial, sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
+    padding: 11px;
+    margin: 0;
 }
 
 /* Products */
@@ -311,8 +322,20 @@ a {
 .checked {
     font-weight: bold;
     width: 326px;
-    background: rgba(112, 187, 220, 0.2);
+    position: relative;
 }
+
+.checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    background: rgba(112, 187, 220, 0.2);
+    width: 300px;
+    height: 50px;
+}
+
 
 /* Brands */
 
@@ -320,6 +343,10 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
+}
+
+.brands-item:hover {
+    opacity: .5;
 }
 
 /* About */
@@ -405,6 +432,11 @@ a {
     margin-bottom: 52px;
 }
 
+.footer-link:hover {
+    background: none;
+    opacity: .5;
+}
+
 .item_block {
     margin-top: 0;
 }
@@ -417,17 +449,10 @@ input[type="email"] {
     background: #666666;
     border: none;
     max-width: 300px;
+    margin-left: 10px;
 }
 
-input[type="email"]:hover {
-    background: #666666;
-    list-style-type: none;
-    border-top: 2px solid #FFFDFD;
-    border-bottom: 2px solid #FFFDFD;
-    border-left: 2px solid #FFFDFD;
-    max-width: 300px;
-}
-
+input[type="email"]:hover,
 input[type="email"]:active {
     background: #666666;
     list-style-type: none;
@@ -448,6 +473,8 @@ input[type="email"]:active {
 
 .social-link:hover {
     opacity: .5;
+    background: none;
+    
 }
 
 .social-link:active {
@@ -466,17 +493,13 @@ input[type="email"]:active {
     color: #696969;
 }
 
-.footer-list {
-    color: white;
-}
-
 div > h4 {
     color: #AAAAAA;
     border-bottom:2px solid #A2A2A2;
 }
 
 .footer-list {
-    color: #FFFFFF;
+    color:#FFFFFF;
 }
 
 .social-list {
@@ -485,7 +508,7 @@ div > h4 {
 }
 
 .social-item {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .footer-copyright {
@@ -506,20 +529,29 @@ div > h4 {
     color: #C29974;
 }
 
+.rating-item:hover svg:not(:last-child) path {
+    fill:#836E5B;
+}
+
+.rating-item:active svg:not(:last-child) path {
+    fill:#C29974;
+}
+
 .copyright-link {
     color: #A2A2A2;
+   
 }
 
 .copyright-link:hover {
     color:#FFFFFF;
     text-decoration: underline;
+    background: none;
 }
 
 
  /* Стили для брэдкрамбс */
 
- /* верхняя навигация */
-.breadcrumbs {
+ .breadcrumbs {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -549,88 +581,38 @@ div > h4 {
     color: #333;
   }
  
-/* для цифр */
+/* Пагинация. Изменить  */
 
-  .breadcrumbs {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+li {
+    list-style-type: none;
+  }
+
+  a:link, a:hover, a:visited {
+      text-decoration: none;
+      color: #AAAAAA;
+  }
+  .heading {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+  }
+  .pagination {
+      display: flex;
+  }
+  .pagination-item {
+      margin-right: 18px;
+      border-radius: 10px;
+        border: solid 1px ;
+  }
+  .pagination a {
+      padding: 11px 16px 11px 16px;
+      transition: .2s all;
+      display: flex;
+  }
+  a:hover {
+      background-color:#AAAAAA;
   }
   
-  .breadcrumbs-item {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 5px;
+  .pg-active {
+      background-color: #AAAAAA;
   }
   
-  .breadcrumbs-item:first-child:before {
-    content: "<";
-    margin-left: 5px;
-  }
-
-  .breadcrumbs-item:last-child:after {
-    content: ">";
-    margin-left: 5px;
-  }
-  
-  .breadcrumbs-link {
-    color: #0b56ea;
-    text-decoration: none;
-  }
-  
-  .breadcrumbs-link:not(span):hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs-link.current {
-    color: #333;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

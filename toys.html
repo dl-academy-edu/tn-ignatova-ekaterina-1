@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Toys</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="toys.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header container" id="header-top">
+    <header class="header container">
         <a href="#">
             <svg class="header-logo" width="100" height="52" viewBox="0 0 100 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H18.1129C31.1202 0 40.4058 12.3713 40.4058 24.0356V27.7332C40.4058 39.3974 31.1202 51.7689 18.1129 51.7689H0V0ZM37.6192 24.0356C37.6192 13.5132 29.2167 2.77333 18.1129 2.77333H2.78661V48.9956H18.1129C29.2167 48.9956 37.6192 38.2557 37.6192 27.7333V24.0356Z" fill="#1E0606"/>
@@ -27,12 +28,12 @@
         <svg class="header-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.365 3.26001C10.945 3.26001 8.16497 6.08001 8.16497 9.52001C8.16497 10.98 8.66497 12.3 9.48497 13.38L3.60498 19.32C3.26498 19.68 3.26498 20.24 3.60498 20.58C3.78498 20.76 4.00498 20.84 4.22498 20.84C4.46498 20.84 4.68497 20.76 4.86497 20.58L10.745 14.62C11.765 15.36 13.005 15.78 14.345 15.78C17.765 15.78 20.545 12.96 20.545 9.52001C20.565 6.06001 17.785 3.26001 14.365 3.26001ZM14.365 14.2C11.825 14.2 9.76497 12.1 9.76497 9.52001C9.76497 6.94001 11.825 4.84001 14.365 4.84001C16.905 4.84001 18.965 6.94001 18.965 9.52001C18.965 12.1 16.905 14.2 14.365 14.2ZM17.465 9.60001C17.425 9.94001 17.125 10.2 16.785 10.2C16.745 10.2 16.725 10.2 16.685 10.2C16.305 10.14 16.045 9.80001 16.085 9.42001C16.225 8.38001 15.065 7.84001 15.005 7.82001C14.665 7.66001 14.505 7.24001 14.665 6.90001C14.825 6.56001 15.225 6.40001 15.585 6.54001C15.665 6.56001 17.745 7.52001 17.465 9.60001ZM16.005 11.12C16.145 11.26 16.245 11.48 16.245 11.68C16.245 11.9 16.165 12.1 16.005 12.24C15.865 12.38 15.645 12.48 15.445 12.48C15.245 12.48 15.025 12.4 14.885 12.24C14.745 12.1 14.645 11.88 14.645 11.68C14.645 11.48 14.725 11.26 14.885 11.12C15.025 10.98 15.245 10.88 15.445 10.88C15.645 10.88 15.845 10.96 16.005 11.12Z" fill="#1E0606"/>
         </svg>
-        <a class="contacts" href="#">Contact us</a>
+        <a class="header-contacts" href="#">Contact us</a>
     </header>
     <main>
-        <h1>Toy for kids</h1>
+        <h1 class="page-title container">Toy for kids</h1>
         <div class="breadcrumbs">
-            <ul class="breadcrumbs-list">
+            <ul class="breadcrumbs-list container">
                 <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Home</a>
                 </li>
@@ -44,158 +45,186 @@
                 </li>
             </ul>
         </div>
-        <section class="filter">
+        <section class="filter box">
             <h1 class="hidden">Filter</h1>
-            <form action="#" method="POST" class="form_body">
-                <div class="filter-cost">
-                    <p>Cost</p>
-                    <input type="range" id="cost" name="cost" min="0" max="500" value="100"> 
-                </div>
-                     
-                <div class="filter-color">
-                    <p>Color</p>
-                    <ul class="color-checkbox">
-                        <li><input type="checkbox" name="black"checked> Black</li>
-                        <li><input type="checkbox" name="blue"> Blue</li>
-                        <li><input type="checkbox" name="green"> Green</li>
-                        <li><input type="checkbox" name="white"> White</li>
-                    </ul>
-                    
-                <div class="filter-delivery">
-                    <p>Delivery</p>
-                    <ul class="delivery-radio">
-                        <li><input type="radio" name="shipping" value="free shipping"> Free shipping</li>
-                        <li><input type="radio" name="shipping" value="fast shipping"checked> Fast shipping</li>
-                    </ul>
+                <form  action="#" method="POST" class="form_body">
+                    <div class="filter-content"> 
+                        <div class="filter-item">
+                            <p>Cost</p>
+                            <input type="range" id="cost" name="cost" min="0" max="500" value="100"> 
+                        </div>
+                            
+                        <div class="filter-item">
+                            <p>Color</p>
+                            <ul class="color-checkbox">
+                                <li class="products-item"><input type="checkbox" name="black"checked> Black</li>
+                                <li class="products-item"><input type="checkbox" name="blue"> Blue</li>
+                                <li class="products-item"><input type="checkbox" name="green"> Green</li>
+                                <li class="products-item"><input type="checkbox" name="white"> White</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="filter-item">
+                            <p>Delivery</p>
+                            <ul class="delivery-radio">
+                                <li class="products-item"><input type="radio" name="shipping" value="free shipping"> Free shipping</li>
+                                <li class="products-item"><input type="radio" name="shipping" value="fast shipping"checked> Fast shipping</li>
+                            </ul>
+                        </div>
+        
+                        <div class="filter-item">
+                            <p>Amount</p>
+                            <div class="value">
+                                <div class="value-item item_value">0-5</div>
+                                <div class="value-item">10-20</div>
+                                <div class="value-item">20-50</div>
+                            </div>
+                        </div>
 
-                <div class="filter-amount">
-                    <p>Amount</p>
-                    <div class="amount-one">0-5</div>
-                    <div class="amount-second">10-20</div>
-                    <div class="amount-third">20-50</div>
-                <button class="submit">Aply</button>
-            </form>
+                        <div class="filter-item">
+                        <button class="button filter-btn" type="submit">Aply</button>
+                        </div>
+                    </div>
+                </form>
         </section>
 
-        <section class="products">
+        <section class="products container">
             <h2 class="hidden">Toys</h1>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/toy1.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>SHARKY BEAN BAG CHAIR COVER</p>
-                    </a>
-                    <p>$60.00 USD</p>
+            <ul class="outline products-list">
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
+                            <img src="images/toy1.jpg" alt="" width="280" height="270">
+                        </a>
+                        <a href="#">
+                            <p class="title-link">SHARKY BEAN BAG CHAIR COVER</p>
+                        </a>
+                        <p>$60.00 USD</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy2.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>BRASS DECO FRAMES</p>
-                    </a>
-                    <p>$66.00 USD</p>
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
+                            <img src="images/toy2.jpg" alt="" width="280" height="270">
+                        </a>
+                        <a href="#">
+                            <p class="title-link">BRASS DECO FRAMES</p>
+                        </a>
+                        <p>$66.00 USD</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy3.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>CIBO FULL APRON</p>
-                    </a>
-                    <p>$60.00 USD</p>
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
+                            <img src="images/toy3.jpg" alt="" width="280" height="270">
+                        </a>
+                        <a href="#">
+                            <p class="title-link">CIBO FULL APRON</p>
+                        </a>
+                        <p>$60.00 USD</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy4.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>GATCHA GATCHA GUMBALL MACHINE</p>
-                    </a>
-                    <p>$56.00 USD</p>
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
+                            <img src="images/toy4.jpg" alt="" width="280" height="270">
+                        </a>
+                        <a href="#">
+                            <p class="title-link">GATCHA GATCHA GUMBALL MACHINE</p>
+                        </a>
+                        <p>$56.00 USD</p>
+                    </div>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
                         <img src="images/toy5.jpg" alt="" width="280" height="270">
                     </a>
                     <a href="#">
-                        <p>CHRISTMAS ADVENT SCENTED CANDLE</p>
+                        <p class="title-link">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     </a>
                     <p>$29.00 USD</p>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/toy6.jpg" alt="" width="280" height="270">
-                    </a>
-                    <a href="#">
-                        <p>TANGLE SPINNING TEA LIGHT</p>
-                    </a>
-                    <p>$56.00 USD</p>
+                    </div>
+                   </li>
+                <li class="products-item">
+                    <div class="container-link">
+                        <a href="#">
+                            <img src="images/toy6.jpg" alt="" width="280" height="270">
+                        </a>
+                        <a href="#">
+                            <p class="title-link">TANGLE SPINNING TEA LIGHT</p>
+                        </a>
+                        <p>$56.00 USD</p>
+                    </div>
                 </li>
             </ul>
         </section>
-        <div class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-                <li class="breadcrumbs-item">
-                <span class="breadcrumbs-link  current"><svg width="5" height="12" viewBox="0 0 5 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="pagination container">
+            <li class="pagination-item">
+                <a href="#"><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
+                    </svg>
+                    </a>
+            </li>
+            <li class="pagination-item pg-active">
+                <a href="#"><svg width="5" height="12" viewBox="0 0 5 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.944 0.799999V12H2.352V2.88H0.112V0.799999H4.944Z" fill="#C29974"/>
-                    </svg>
-                    </span>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#"><svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.992 9.888V12H0.528V10.32L4.848 6.24C5.30667 5.80267 5.616 5.42933 5.776 5.12C5.936 4.8 6.016 4.48533 6.016 4.176C6.016 3.728 5.86133 3.38667 5.552 3.152C5.25333 2.90667 4.81067 2.784 4.224 2.784C3.73333 2.784 3.29067 2.88 2.896 3.072C2.50133 3.25333 2.17067 3.53067 1.904 3.904L0.016 2.688C0.453333 2.03733 1.056 1.53067 1.824 1.168C2.592 0.794666 3.472 0.608 4.464 0.608C5.296 0.608 6.02133 0.746666 6.64 1.024C7.26933 1.29067 7.75467 1.67467 8.096 2.176C8.448 2.66667 8.624 3.248 8.624 3.92C8.624 4.528 8.496 5.09867 8.24 5.632C7.984 6.16533 7.488 6.77333 6.752 7.456L4.176 9.888H8.992Z" fill="#1E0606"/>
-                    </svg>
-                    </a>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#"><svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.856 5.36C7.83733 5.52 8.58933 5.888 9.112 6.464C9.63467 7.02933 9.896 7.73333 9.896 8.576C9.896 9.22667 9.72533 9.82933 9.384 10.384C9.04267 10.928 8.52 11.3653 7.816 11.696C7.12267 12.0267 6.26933 12.192 5.256 12.192C4.46667 12.192 3.688 12.0907 2.92 11.888C2.16267 11.6747 1.51733 11.376 0.984 10.992L1.992 9.008C2.41867 9.328 2.90933 9.57867 3.464 9.76C4.02933 9.93067 4.60533 10.016 5.192 10.016C5.84267 10.016 6.35467 9.89333 6.728 9.648C7.10133 9.392 7.288 9.03467 7.288 8.576C7.288 7.65867 6.58933 7.2 5.192 7.2H4.008V5.488L6.312 2.88H1.544V0.799999H9.384V2.48L6.856 5.36Z" fill="#1E0606"/>
-                    </svg>
-                    </a>
-                </li>
-                <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.88 9.648H9.056V12H6.528V9.648H0.496V7.904L5.776 0.799999H8.496L3.6 7.536H6.608V5.44H9.056V7.536H10.88V9.648Z" fill="#1E0606"/>
+                    </svg></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#"><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4"/>
                     </svg>
                     </a>
-                </li>
-            </ul>
-    </div>
+            </li>
+        </ul>
     </main>
     <footer class="footer wrapper">
         <div class="footer-content container">
             <div class="footer-first-block">
                 <div class="footer-block-item">
-                    <h4 class="">Navigation</h4>
+                    <h4>Navigation</h4>
                     <nav>
                         <ul class="outline footer-list">
-                            <li><a class="footer-link" href="#">About Us</a></li> 
-                            <li><a class="footer-link" href="#">Blog</a></li>
-                            <li><a class="footer-link" href="#">Design Services</a></li>
-                            <li><a class="footer-link" href="#">Featured On</a></li> 
-                            <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-                            <li><a class="footer-link" href="#">Shop By Designer</a></li>       
+                            <li class="products-item"><a class="footer-link" href="#">About Us</a></li> 
+                            <li class="products-item"><a class="footer-link" href="#">Blog</a></li>
+                            <li class="products-item"><a class="footer-link" href="#">Design Services</a></li>
+                            <li class="products-item"><a class="footer-link" href="#">Featured On</a></li> 
+                            <li class="products-item"><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+                            <li class="products-item"><a class="footer-link" href="#">Shop By Designer</a></li>       
                         </ul>
                     </nav>
                 </div>
             <div class="footer-block-item">
-                <h4 class="">Customer Information</h4>
+                <h4>Customer Information</h4>
                 <nav>
                     <ul class="outline footer-list">
-                        <li><a class="footer-link" href="#">Contact Us</a></li> 
-                        <li><a class="footer-link" href="#">Sale Exclusions</a></li>
-                        <li><a class="footer-link" href="#">Shipping & Returns</a></li>
-                        <li><a class="footer-link" href="#">Terms & Conditions</a></li> 
-                        <li><a class="footer-link" href="#">Privacy Policy</a></li>
-                        <li><a class="footer-link" href="#">Search</a></li>       
+                        <li class="products-item"><a class="footer-link" href="#">Contact Us</a></li> 
+                        <li class="products-item"><a class="footer-link" href="#">Sale Exclusions</a></li>
+                        <li class="products-item"><a class="footer-link" href="#">Shipping & Returns</a></li>
+                        <li class="products-item"><a class="footer-link" href="#">Terms & Conditions</a></li> 
+                        <li class="products-item"><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li class="products-item"><a class="footer-link" href="#">Search</a></li>       
                     </ul>
                 </nav>
             </div>
             <div class="footer-block-item item_block">
-                <h4 class="">Connect</h4>
+                <h4 >Connect</h4>
                 <form class="form-container"action="#" method="POST" class="">
                     <input name="mail" type="email" placeholder="Email">
                     <button class="footer-btn" type="submit">Join</button>
@@ -241,7 +270,7 @@
                 </div>
                 <div class="rating-item">
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#836E5B"/>
                     </svg>
                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
