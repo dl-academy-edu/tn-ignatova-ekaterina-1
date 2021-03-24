@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Toys</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="toys.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/toys.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -32,8 +33,8 @@
     </header>
     <main>
         <h1 class="page-title container">Toy for kids</h1>
-        <div class="breadcrumbs">
-            <ul class="breadcrumbs-list container">
+        <div class="breadcrumbs container">
+            <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="#">Home</a>
                 </li>
@@ -45,45 +46,73 @@
                 </li>
             </ul>
         </div>
-        <section class="filter box">
+        <section class="filter-box">
             <h1 class="hidden">Filter</h1>
-                <form  action="#" method="POST" class="form_body">
-                    <div class="filter-content"> 
-                        <div class="filter-item">
-                            <p>Cost</p>
-                            <input type="range" id="cost" name="cost" min="0" max="500" value="100"> 
-                        </div>
-                            
-                        <div class="filter-item">
-                            <p>Color</p>
-                            <ul class="color-checkbox">
-                                <li class="products-item"><input type="checkbox" name="black"checked> Black</li>
-                                <li class="products-item"><input type="checkbox" name="blue"> Blue</li>
-                                <li class="products-item"><input type="checkbox" name="green"> Green</li>
-                                <li class="products-item"><input type="checkbox" name="white"> White</li>
-                            </ul>
-                        </div>
-                            
-                        <div class="filter-item">
-                            <p>Delivery</p>
-                            <ul class="delivery-radio">
-                                <li class="products-item"><input type="radio" name="shipping" value="free shipping"> Free shipping</li>
-                                <li class="products-item"><input type="radio" name="shipping" value="fast shipping"checked> Fast shipping</li>
-                            </ul>
-                        </div>
-        
-                        <div class="filter-item">
-                            <p>Amount</p>
-                            <div class="value">
-                                <div class="value-item item_value">0-5</div>
-                                <div class="value-item">10-20</div>
-                                <div class="value-item">20-50</div>
-                            </div>
-                        </div>
+                <form action="" method="POST" class="filter-form">
+                            <fieldset class=""> 
+                                <div class="filter-item">
+                                    <legend>Cost</legend>
+                                    <input type="range" id="cost" name="cost" min="0" max="500" value="100"> 
+                                </div>
+                            </fieldset>                         
 
-                        <div class="filter-item">
-                        <button class="button filter-btn" type="submit">Aply</button>
-                        </div>
+                            <fieldset class="">
+                                <legend>Color</legend>
+                                <div class="checkbox">
+                                    <input class="input" type="checkbox" id="contant-black" checked>
+                                    <label for="contant-black" tabindex="0">Black</label>
+                                </div>
+                                
+                                <div class="checkbox">
+                                    <input class="input" type="checkbox" id="contant-blue">
+                                    <label for="contant-blue" tabindex="0">Blue</label>
+                                </div>
+                
+                                <div class="checkbox">
+                                    <input class="input" type="checkbox" id="contant-green">
+                                    <label for="contant-green" tabindex="0">Green</label>                                    
+                                </div>  
+                                <div class="checkbox">
+                                    <input class="input" type="checkbox" id="contant-white">
+                                    <label for="contant-white" tabindex="0">White</label>
+                                </div>               
+                            </fieldset>
+                                        
+                            <fieldset>
+                                <legend>Delivery</legend>                                
+                                <div class="radiobox">
+                                    <input class="radio" type="radio" name="radio" id="shipping-free">
+                                    <label for="shipping-free"  tabindex="0">Free shipping</label>
+                                </div>                                
+                                <div class="radiobox">
+                                    <input class="radio" type="radio" name="radio" id="shipping-fast">
+                                    <label for="shipping-fast"  tabindex="0">Fast shipping</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="amount-box">
+                                <legend>Amount</legend>
+                                <div class="form-radio-btn ">
+                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <label  for="radio-1">0-5</label>
+                                </div>
+                                 
+                                <div class="form-radio-btn">
+                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <label for="radio-2">10-20</label>
+                                </div>
+                                 
+                                <div class="form-radio-btn">
+                                    <input id="radio-3" type="radio" name="radio" value="3">
+                                    <label for="radio-3">20-50</label>
+                                </div>                                           
+                            </fieldset>                                                                  
+    
+                            <div class="filter-item">
+                            <button class="button" type="submit">Aply</button>
+                            </div>
+                            </div>
+                    </form>                     
                     </div>
                 </form>
         </section>
@@ -99,7 +128,7 @@
                         <a href="#">
                             <p class="title-link">SHARKY BEAN BAG CHAIR COVER</p>
                         </a>
-                        <p>$60.00 USD</p>
+                        <p class="price-link">$60.00 USD</p>
                     </div>
                 </li>
                 <li class="products-item">
@@ -110,7 +139,7 @@
                         <a href="#">
                             <p class="title-link">BRASS DECO FRAMES</p>
                         </a>
-                        <p>$66.00 USD</p>
+                        <p class="price-link">$66.00 USD</p>
                     </div>
                 </li>
                 <li class="products-item">
@@ -121,7 +150,7 @@
                         <a href="#">
                             <p class="title-link">CIBO FULL APRON</p>
                         </a>
-                        <p>$60.00 USD</p>
+                        <p class="price-link">$60.00 USD</p>
                     </div>
                 </li>
                 <li class="products-item">
@@ -132,7 +161,7 @@
                         <a href="#">
                             <p class="title-link">GATCHA GATCHA GUMBALL MACHINE</p>
                         </a>
-                        <p>$56.00 USD</p>
+                        <p class="price-link">$56.00 USD</p>
                     </div>
                 </li>
                 <li class="products-item">
@@ -143,7 +172,7 @@
                     <a href="#">
                         <p class="title-link">CHRISTMAS ADVENT SCENTED CANDLE</p>
                     </a>
-                    <p>$29.00 USD</p>
+                    <p class="price-link">$29.00 USD</p>
                     </div>
                    </li>
                 <li class="products-item">
@@ -154,7 +183,7 @@
                         <a href="#">
                             <p class="title-link">TANGLE SPINNING TEA LIGHT</p>
                         </a>
-                        <p>$56.00 USD</p>
+                        <p class="price-link">$56.00 USD</p>
                     </div>
                 </li>
             </ul>
@@ -201,12 +230,12 @@
                     <h4>Navigation</h4>
                     <nav>
                         <ul class="outline footer-list">
-                            <li class="products-item"><a class="footer-link" href="#">About Us</a></li> 
-                            <li class="products-item"><a class="footer-link" href="#">Blog</a></li>
-                            <li class="products-item"><a class="footer-link" href="#">Design Services</a></li>
-                            <li class="products-item"><a class="footer-link" href="#">Featured On</a></li> 
-                            <li class="products-item"><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-                            <li class="products-item"><a class="footer-link" href="#">Shop By Designer</a></li>       
+                            <li><a class="footer-link" href="#">About Us</a></li> 
+                            <li><a class="footer-link" href="#">Blog</a></li>
+                            <li><a class="footer-link" href="#">Design Services</a></li>
+                            <li><a class="footer-link" href="#">Featured On</a></li> 
+                            <li><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
+                            <li><a class="footer-link" href="#">Shop By Designer</a></li>       
                         </ul>
                     </nav>
                 </div>
@@ -214,12 +243,12 @@
                 <h4>Customer Information</h4>
                 <nav>
                     <ul class="outline footer-list">
-                        <li class="products-item"><a class="footer-link" href="#">Contact Us</a></li> 
-                        <li class="products-item"><a class="footer-link" href="#">Sale Exclusions</a></li>
-                        <li class="products-item"><a class="footer-link" href="#">Shipping & Returns</a></li>
-                        <li class="products-item"><a class="footer-link" href="#">Terms & Conditions</a></li> 
-                        <li class="products-item"><a class="footer-link" href="#">Privacy Policy</a></li>
-                        <li class="products-item"><a class="footer-link" href="#">Search</a></li>       
+                        <li><a class="footer-link" href="#">Contact Us</a></li> 
+                        <li><a class="footer-link" href="#">Sale Exclusions</a></li>
+                        <li><a class="footer-link" href="#">Shipping & Returns</a></li>
+                        <li><a class="footer-link" href="#">Terms & Conditions</a></li> 
+                        <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="#">Search</a></li>       
                     </ul>
                 </nav>
             </div>
@@ -295,5 +324,12 @@
         </div>
     </div>
     </footer>
+
+    
+     
+    
+
+
+
 </body>
 </html>

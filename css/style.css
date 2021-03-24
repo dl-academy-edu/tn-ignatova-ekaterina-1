@@ -1,5 +1,8 @@
+/* outline:none влияет на доступность */
+
 *  {
     box-sizing: border-box;
+    outline: none; 
 }
 
 body {
@@ -12,9 +15,10 @@ body {
     font-weight: normal;
     color: #1E0606;
 }
+
 /* не работает */
 .a {
-    text-decoration: none;
+    text-decoration: none; 
     color: black;
 }
 
@@ -59,11 +63,11 @@ body {
     border: none;
     text-transform: uppercase;
     display: block;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .button:hover {
-    background: #C29974;
+    background: #C29974;    
 }
 
 .button:active {
@@ -84,12 +88,13 @@ body {
     display: flex;
     align-items: center;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 19px;text-transform: uppercase;    
+    color: #1E0606;
+    text-decoration: none; 
 }
 
 .header-logo:hover {
     opacity: .5;
-    background: none;
 }
 
 .header-logo:active {
@@ -97,25 +102,24 @@ body {
 }
 
 .header-nav {
-    margin: 0 auto 0 60px;
+    margin: 0 auto 0 60px;    
 }
 
 .header-list {
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 .header-item {
-    margin-right: 20px;     
+    margin-right: 20px;    
 }
 
 .header-item:hover {
-    opacity: .5;
-    background: none;
+    opacity: .5;    
 }
 
 .header-item:active {
-    opacity: .2;
+    opacity: .2;    
 }
 
 .header-search {
@@ -133,21 +137,21 @@ body {
 }
 
 .header-contacts {
-    font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;    
+    color: #1E0606;
 }
 
 .header-contacts:hover {
-    opacity: .5;
-    background: none;
-    
+    opacity: .5;    
 }
 
 .header-contacts:active {
-    opacity: .2;
-    background: none;
+    opacity: .2;    
 }
 
 /* slider */
@@ -167,7 +171,7 @@ body {
     margin-left: 133px;
 }
 
-.slider-title {
+.page-title {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -238,7 +242,7 @@ body {
 
 .container-link {
     position: relative;
-    text-align: center;
+    text-align: center;    
 }
 
 .title-link {
@@ -251,11 +255,11 @@ body {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase;    
 }
 
 .title-link:hover {
-    text-decoration: underline;
+    text-decoration: underline;    
 }
 
 .products-info {
@@ -268,6 +272,8 @@ body {
     border: none;
     opacity: .3;
     width: 27px;
+    background: none;
+    margin-left: 6px;
 }
 
 .info_item {
@@ -347,9 +353,11 @@ body {
 
 .brands-item:hover {
     opacity: .5;
+    cursor: pointer;
 }
 
 /* About */
+
 .about {
     display: flex;
     justify-content: space-between;
@@ -388,6 +396,7 @@ body {
 
 .about-btn {
     margin-bottom: 35px;
+    text-decoration: none;
 }
 
 .contacts-content {
@@ -474,7 +483,6 @@ input[type="email"]:active {
 .social-link:hover {
     opacity: .5;
     background: none;
-    
 }
 
 .social-link:active {
@@ -483,6 +491,7 @@ input[type="email"]:active {
 
 .footer-link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-link:hover {
@@ -523,6 +532,7 @@ div > h4 {
 
 .rating-item:hover {
     color: #836E5B;
+    cursor: pointer;
 }
 
 .rating-item:active {
@@ -539,7 +549,7 @@ div > h4 {
 
 .copyright-link {
     color: #A2A2A2;
-   
+    text-decoration: none;
 }
 
 .copyright-link:hover {
@@ -548,71 +558,119 @@ div > h4 {
     background: none;
 }
 
+/* Модальное окно */
 
- /* Стили для брэдкрамбс */
+.contact-form {
+    max-width: 680px;
+    width: 100%;
+    background: #E5EAF8;
+    margin: 0 auto 60px;
+    padding: 42px 40px;
+}
 
- .breadcrumbs {
+.contact-form fieldset{
+    border: none;
+    display: flex;
+    max-width: 0%;
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-  
-  .breadcrumbs-item {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 5px;
-  }
-  
-  .breadcrumbs-item:not(:last-child):after {
-    content: ">";
-    margin-left: 5px;
-  }
-  
-  .breadcrumbs-link {
-    color: #0b56ea;
-    text-decoration: none;
-  }
-  
-  .breadcrumbs-link:not(span):hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumbs-link.current {
-    color: #333;
-  }
- 
-/* Пагинация. Изменить  */
+    margin-bottom: 20px;    
+}
 
-li {
-    list-style-type: none;
-  }
+.contact-form label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    margin-bottom: 15px;
+}
 
-  a:link, a:hover, a:visited {
-      text-decoration: none;
-      color: #AAAAAA;
-  }
-  .heading {
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-  }
-  .pagination {
-      display: flex;
-  }
-  .pagination-item {
-      margin-right: 18px;
-      border-radius: 10px;
-        border: solid 1px ;
-  }
-  .pagination a {
-      padding: 11px 16px 11px 16px;
-      transition: .2s all;
-      display: flex;
-  }
-  a:hover {
-      background-color:#AAAAAA;
-  }
-  
-  .pg-active {
-      background-color: #AAAAAA;
-  }
-  
+.contact-wrapper {
+    display: flex;  
+}
+
+div .form-name {
+    display: flex;
+    width: 600px;
+    bottom: 50px;
+}
+
+.contact-block input {
+    max-width: 290px
+}
+
+.contact-wrapper:focus-within label {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input,
+.contact-form textarea {
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 25px;        
+}  
+
+.contact-form textarea {
+    width: 600px;
+    height: auto;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input:focus + label,
+.contact-form textarea:focus + label {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-form input::placeholder {
+    color: #1E0606;
+}
+
+.checkbox {
+    width: 542px;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.input {
+    display: none;
+}
+
+.checkbox label:before,
+.checkbox label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    outline:none;
+}
+
+.checkbox label:before {
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left: 0;    
+    border: 2px solid #C29974;
+}
+
+.checkbox label:after {
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 5px;
+    background: #C29974;
+    opacity: 0;
+}
+
+.input:checked + label:after {
+    opacity: 1;
+}

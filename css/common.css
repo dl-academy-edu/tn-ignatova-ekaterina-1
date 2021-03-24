@@ -1,5 +1,8 @@
+/* outline:none влияет на доступность */
+
 *  {
     box-sizing: border-box;
+    outline: none; 
 }
 
 body {
@@ -12,7 +15,9 @@ body {
     font-weight: normal;
     color: #1E0606;
 }
+
 /* не работает */
+
 .a {
     text-decoration: none;
     color: black;
@@ -32,15 +37,17 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1180px;
-    width: 100%;
-    margin: 0 auto; 
+.page-title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%; 
+    margin-bottom: 20px; 
+    text-transform: uppercase;
 }
 
-.box {
-    max-width: 1400px;
-    background: rgba(125, 151, 218, 0.2);
+.container {
+    max-width: 1180px;
     width: 100%;
     margin: 0 auto; 
 }
@@ -69,6 +76,18 @@ body {
     cursor: pointer;
 }
 
+.button:hover {
+    background: #C29974;
+}
+
+.button:active {
+    background: #CFAF91;
+}
+
+.button:disabled {
+    background: #C1C1C1;
+}
+
 /* Header */
 
 .header {
@@ -80,11 +99,11 @@ body {
     align-items: center;
     font-size: 14px;
     line-height: 19px;
+    text-transform: uppercase;
 }
 
 .header-logo:hover {
     opacity: .5;
-    background: none;
 }
 
 .header-logo:active {
@@ -101,7 +120,7 @@ body {
 }
 
 .header-item {
-    margin-right: 20px;     
+    margin-right: 20px; 
 }
 
 .header-item:hover {
@@ -128,136 +147,57 @@ body {
 }
 
 .header-contacts {
-    font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;    
+    color: #1E0606;
 }
 
 .header-contacts:hover {
-    opacity: .5;
-    background: none;
+    opacity: .5;    
     
 }
 
 .header-contacts:active {
-    opacity: .2;
-    background: none;
-}
-
-.page-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%; 
-    margin-bottom: 20px; 
-    text-transform: uppercase;
+    opacity: .2;    
 }
 
 /* Стили для брэдкрамбс */
 
 .breadcrumbs {
-    margin: 0;
-    padding: 50px;
+    margin-left: 0 auto;  
     list-style-type: none;
-  }
-  
-  .breadcrumbs-item {
+    font-family:Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1E0606;
+}
+
+.breadcrumbs-item {
     display: inline-block;
     vertical-align: top;
     margin-right: 5px;
-  }
+}
   
   .breadcrumbs-item:not(:last-child):after {
     content: ">";
     margin-left: 5px;
-  }
+}
   
   .breadcrumbs-link {
-    color: #0b56ea;
+    color: #1E0606;  
     text-decoration: none;
-  }
+}
   
-  .breadcrumbs-link:not(span):hover {
-    text-decoration: underline;
+.breadcrumbs-link.current {
+    color: #1E0606;
+    opacity: 0.5;
   }
-  
-  .breadcrumbs-link.current {
-    color: #333;
-  }
-
- /* Filter */
-
-.filter-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 42px 195px 42px  110px;
-    margin-bottom: 60px;
-}
-
-.filter-item {
-   margin-right: 20px;      
-}
-
-.color-checkbox,
-.delivery-radio {
-    list-style-type: none;
-    margin-bottom: 5px;
-    padding: 0;    
-}
-
-.value {
-    max-width: 240px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.value-item {
-    padding: 7px 19px;
-    background: #FFFFFF;
-}
-
-.item_value {
-    padding: 7px 28px;
-    background: #F3D0DB;
-}
-
-.filter-btn {
-    max-width: 200px;
-    top: 79px;   
-    bottom: 135px;
-    background: red;
-
-}
-
-/* Products */
-
-.products {
-    margin-bottom: 50px;
-}
-
-.products-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 38px;
-    line-height: 46px;
-}
-
-.products-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 -10px -20px;
-}
-
-.products-item {
-    width: 25%;
-    margin: 10px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-}
 
 /* Pagination */
 
@@ -283,13 +223,14 @@ body {
 }
 
 a:link, a:hover, a:visited {
+    color: black;
     text-decoration: none;
-    color: #AAAAAA;
 }
 
 a:hover svg path {
     fill:#AAAAAA;
     cursor: pointer;
+    text-decoration: none;
 }
   
 .pg-active {
@@ -358,7 +299,6 @@ input[type="email"]:active {
 .social-link:hover {
     opacity: .5;
     background: none;
-    
 }
 
 .social-link:active {
@@ -367,6 +307,7 @@ input[type="email"]:active {
 
 .footer-link {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .footer-link:hover {
@@ -407,6 +348,7 @@ div > h4 {
 
 .rating-item:hover {
     color: #836E5B;
+    cursor: pointer;
 }
 
 .rating-item:active {
@@ -423,6 +365,7 @@ div > h4 {
 
 .copyright-link {
     color: #A2A2A2;
+    text-decoration: none;
    
 }
 
