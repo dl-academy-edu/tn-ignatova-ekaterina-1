@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Main page</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +37,7 @@
             <div class="slider-first-block">  
                 <h1 class="page-title">THE OOH NOO COLLECTION</h1>
                 <p class="slider-item">Designed in Slovenia</p>
-                <button class=" button slider-btn">EXPLORE NOW</button>
+                <button class=" button slider-btn slider-js">EXPLORE NOW</button>
             </div>   
                 <img class="slider-img"src="images/slider1.png" alt="">
             </div>
@@ -256,9 +257,13 @@
     
 
 
-
-    <div class="modal-form">
+    <div class="popup-overlay"></div>
+    <div class="popup-form">
         <h1 class="hidden">Modal window</h1>
+        <button class="popup-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
+            </svg>
+            </button>
         <form action="#" method="POST" class="contact-form">
             <fieldset class="">
                 <div class="form-name">
@@ -279,7 +284,7 @@
             <fieldset class="contact-wrapper">
                 <div class="">
                     <label for="form-message" class="form-label">Message</label>                    
-                    <textarea id="form-message" type="text" name="message" class="form-textarea"></textarea>                    
+                    <textarea id="form-message" type="text" name="message" class="form-textarea" cols="30" rows="3"></textarea>                    
                 </div>
             </fieldset>
             <fieldset >
@@ -291,5 +296,7 @@
             <button class="button" type="submit">Submit</button>
         </form>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

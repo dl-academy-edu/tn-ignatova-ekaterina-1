@@ -1,4 +1,4 @@
- .contacts-box {
+.contacts-box {
     display: flex;
 } 
 
@@ -23,7 +23,7 @@
     font-size: 14px;
     line-height: 19px;
     color: #1E0606;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
 }
 
 .contact-wrapper {
@@ -36,8 +36,10 @@ div .form-name {
     bottom: 50px;
 }
 
-.contact-block input {
-    max-width: 290px
+.contact-block {
+    flex-direction: column;
+    width: 290px;
+    margin-right: 20px;
 }
 
 .contact-wrapper:focus-within label {

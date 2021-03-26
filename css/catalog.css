@@ -7,33 +7,17 @@
 
 /* Products */
 
-/* Элементы не встают как на картинке */
-
 .products {
     margin-bottom: 55px;
 }
 
 .products-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap;  
     align-items: center;
     justify-content: center;
     margin: 0 -10px -20px;
 }
-
-/* .first-product,
-.second-product,
-.third-product {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.fourth-product,
-.fifth-product,
-.sixth-product {
-    display: flex;
-    justify-content: flex-end;
-} */
 
 .products-item {
     width: 25%;
@@ -42,16 +26,19 @@
     margin-bottom: 23px;
 }
 
-/* Картинки не отображаются */
-
 /* продукт 1 */
 
 .first-product {
     background: #DBE4DB;
-    background-image: url("images/product1.png") no-repeat center; 
+    background-image: url("../images/product1.png");
+    background-blend-mode: multiply;
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .first-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 46px 18px;
     position: relative;
     text-align: center;    
@@ -61,10 +48,14 @@
 
 .second-product {
     background: #EADDD3;
-    background-image: url("images/product2.png") no-repeat center; 
+    background-image: url("../images/product2.png"); 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .second-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 13px 36px;
     position: relative;
     text-align: center;    
@@ -74,10 +65,15 @@
 
 .third-product {
     background: #F8F2DA;
-    background-image: url("images/product3.png") no-repeat center; 
+    background-image: url("../images/product3.png");
+    background-blend-mode: multiply; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .third-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 0;
     position: relative;
     text-align: center;    
@@ -87,10 +83,15 @@
 
 .fourth-product {
     background: #D5D4E1;
-    background-image: url("images/product4.png") no-repeat center; 
+    background-image: url("../images/product4.png"); 
+    background-blend-mode: multiply; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .fourth-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 10px 20px;
     position: relative;
     text-align: center;    
@@ -100,10 +101,15 @@
 
 .fifth-product {
     background: #F3D0DB;
-    background-image: url("images/product5.png") no-repeat center; 
+    background-image: url("../images/product5.png"); 
+    background-blend-mode: multiply; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .fifth-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 11px 16px;
     position: relative;
     text-align: center;    
@@ -113,10 +119,15 @@
 
 .sixth-product {
     background: #E5EAF8;
-    background-image: url("images/product6.png") no-repeat center; 
+    background-image: url("../images/product6.png"); 
+    background-blend-mode: multiply; 
+    background-repeat: no-repeat; 
+    background-position: center;
 }
 
 .sixth-product .container-link {
+    width: 280px;
+    height: 270px;
     padding: 33px 4px;
     position: relative;
     text-align: center;    
@@ -124,7 +135,8 @@
 
 .title-link {
     position: absolute;
-    top: 40%;
+    margin: 0;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
