@@ -28,6 +28,45 @@
     color: #1E0606;
 }
 
+/* ползунок */
+
+.range-slider {
+    position: relative;    
+    width: 188px;
+    height: 89px;
+    left: -2px;
+    bottom: -12px;
+}
+
+output {
+    position: absolute;
+    left: -9px;
+    bottom: 19px;
+    padding: 7px 10px;
+    color: black;
+    border-radius: 10px 10px 0 10px;
+    font-weight: bold;
+}
+
+#fader {
+    position: absolute;
+    left: 3px;
+    width: 188px;
+    height: 4px;
+    background:#C29974;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#fader::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #C29974;    
+}
+
 .checkbox {
     bottom: 15px;
 }
@@ -42,7 +81,6 @@
 .checkbox,
 .radiobox {
     margin-bottom: 15px;
-    
 }
 
 .checkbox label,
@@ -73,19 +111,29 @@
     top: 0;
     left: 0;    
     border: 2px solid #C29974;
+    border-radius: 20%;
 }
 
 .checkbox label:after {
+    content: " ";
+    background-image: url(../images/Vector\ 1\ \(Stroke\).png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 13px;
     height: 13px;
     top: 5px;
     left: 5px;
-    background: #C29974;
     opacity: 0;
 }
 
 .input:checked + label:after {
     opacity: 1;
+}
+
+.input:checked:hover + label:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 /* radio */
@@ -113,6 +161,11 @@
     opacity: 1;
 }
 
+.radio:checked:hover + label:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 /* amount */
 
 .form-radio-btn {
@@ -124,8 +177,6 @@
 .form-radio-btn input[type=radio] {
 	display: none;
 }
-
-
 
 .form-radio-btn label {
 	display: inline-block;
@@ -140,6 +191,11 @@
  .form-radio-btn input[type=radio]:checked + label {
 	background: #F3D0DB;
 }
+
+.form-radio-btn input[type=radio]:hover + label {
+	background: #EDDEEB;
+}
+
 
 .filter-item button {
     margin-top: 37px;

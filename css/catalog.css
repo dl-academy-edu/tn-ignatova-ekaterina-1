@@ -13,7 +13,7 @@
 
 .products-list {
     display: flex; 
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 0 -10px -20px;
@@ -131,6 +131,10 @@
     padding: 33px 4px;
     position: relative;
     text-align: center;    
+}
+
+.products-item .fourth-product {
+    margin: 50px;
 }
 
 .title-link {

@@ -96,7 +96,7 @@ footer a {
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 125px;
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -160,14 +160,13 @@ footer a {
 
 .header-contacts:hover {
     opacity: .5;    
-    
 }
 
 .header-contacts:active {
     opacity: .2;    
 }
 
-/* Стили для брэдкрамбс */
+/* Breadcrumbs */
 
 .breadcrumbs {
     margin-left: 0 auto;  
@@ -177,7 +176,11 @@ footer a {
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
-    color: #1E0606;
+    color: #1E0606;    
+}
+
+.breadcrumbs-list {
+    padding-left: 0;
 }
 
 .breadcrumbs-item {
@@ -204,34 +207,38 @@ footer a {
 /* Pagination */
 
 .pagination {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 50px;
     display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.pagination-nav {
+    margin: 0 auto;
+}
+
+.pagination-list {
+    display: flex;
+    align-items: center;
 }
 
 .pagination-item {
-    margin: 0 auto;
+    margin-right: 67px; 
     list-style-type: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 64px;
 }
 
-.pagination a {
-    padding: 11px 16px 11px 16px;
-    transition: .2s all;
-    display: flex;
+.pg-active {
+    fill: #C29974;
 }
 
 a:hover svg path {
     fill:#AAAAAA;
     cursor: pointer;
     text-decoration: none;
-}
-  
-.pg-active {
-    fill: #C29974;
 }
 
 /* footer */
@@ -252,7 +259,10 @@ a:hover svg path {
 .footer-block-item {
     margin: auto;
     max-width: 380px;
-    margin-bottom: 52px;
+}
+
+.footer-item {
+    margin-bottom: 15px;
 }
 
 .footer-link:hover {
@@ -270,7 +280,7 @@ a:hover svg path {
 
 input[type="email"] {
     background: #666666;
-    border: none;
+    border: 2px solid transparent;
     max-width: 300px;
     margin-left: 10px;
 }
@@ -305,6 +315,8 @@ input[type="email"]:active {
 
 .footer-link:hover {
     color: #A1A1A1;
+    background: none;
+    opacity: .5;
 }
 
 .footer-link:active {
@@ -314,10 +326,13 @@ input[type="email"]:active {
 div > h4 {
     color: #AAAAAA;
     border-bottom:2px solid #A2A2A2;
+    width: 375px;
+    padding-bottom: 23px;
 }
 
 .footer-list {
     color:#FFFFFF;
+    margin-bottom: 28px;
 }
 
 .social-list {
@@ -339,6 +354,10 @@ div > h4 {
     margin:auto;
 }
 
+.rating-item {
+    margin-left: 0;
+}
+
 .rating-item:hover {
     color: #836E5B;
     cursor: pointer;
@@ -354,12 +373,11 @@ div > h4 {
 
 .rating-item:active svg:not(:last-child) path {
     fill:#C29974;
-}
+} 
 
 .copyright-link {
     color: #A2A2A2;
     text-decoration: none;
-   
 }
 
 .copyright-link:hover {
