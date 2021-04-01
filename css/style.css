@@ -1,8 +1,13 @@
+#bottom {
+    margin-bottom: 120px;
+}
+
+
 /* slider */
 
 .slider {
     background-image: url("images/slider1.jpg");
-    background: #EEE4DB no-repeat center bottom;
+    background: #EEE4DB;
     margin-bottom: 90px;
 }
 
@@ -45,10 +50,10 @@
 }
 
 .slider-img {
-   width: 636px;
-   margin-top: -89px;
-   margin-bottom: 0;
-   margin-right: 99px;
+    width: 635px;
+    margin-top: -89px;
+    margin-bottom: 0;
+    margin-right: 99px;
 }
 
 .slider-item {
@@ -148,7 +153,13 @@
     margin-bottom: 90px;
 }
 
+.delivery-img {
+    background-color:#C9DFEC;
+}
+
 .delivery-info {
+    display: flex;
+    flex-direction: column;
     max-width: 540px;
     margin-top: 30px;
     margin-left: 60px;
@@ -166,16 +177,9 @@
     margin-bottom: 6px;
 }
 
-.delivery-input {
-    display: none;
-}    
-
-.delivery-input:checked {
-    font-weight: bold;
-}
-
-.delivery-btn {
-    max-width: 149px;
+.delivery-tabs {
+    display: flex;
+    flex-direction: column;
 }
 
 .tabs-item {
@@ -185,21 +189,31 @@
     line-height: 32px;
 }
 
-.checked {
-    font-weight: bold;
-    width: 326px;
-    position: relative;
+.delivery-input {
+    display: none;
+} 
+
+.delivery-tabs label {
+	display: block; 
+	cursor: pointer;		
 }
 
-.checked:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: -60px;
+.delivery-tabs input:checked + label {
+	font-weight: bold;
     background: rgba(112, 187, 220, 0.2);
-    width: 300px;
-    height: 50px;
+    width: 326px;
+    height: 55px;
+}
+
+/* Не работает */
+.tab-first:checked ~ .tab-content-1,
+.tab-second:checked ~ .tab-content-2,
+.tab-third:checked ~ .tab-content-3 {
+    display: block;
+}
+
+.delivery-btn {
+    max-width: 149px;
 }
 
 /* Brands */
@@ -442,3 +456,8 @@ div .form-name {
     background: transparent;
     border: none;
 }
+
+
+
+
+

@@ -48,7 +48,7 @@ output {
     font-weight: bold;
 }
 
-#fader {
+.fader {
     position: absolute;
     left: 3px;
     width: 188px;
@@ -59,7 +59,7 @@ output {
     border-radius: 5px;
 }
 
-#fader::-webkit-slider-thumb {
+.fader::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 24px;
     height: 24px;
@@ -136,6 +136,10 @@ output {
     text-decoration: underline;
 }
 
+.input:disabled + label {
+    opacity: .7;
+}
+
 /* radio */
 
 .radiobox label:before {
@@ -174,7 +178,7 @@ output {
     padding: 0;
 }
 
-.form-radio-btn input[type=radio] {
+.form-radio-btn input {
 	display: none;
 }
 
@@ -188,17 +192,19 @@ output {
     background:#fff;
 }
 
- .form-radio-btn input[type=radio]:checked + label {
-	background: #F3D0DB;
-}
-
-.form-radio-btn input[type=radio]:hover + label {
+.form-radio-btn input:hover + label {
 	background: #EDDEEB;
+    color: #877379;
 }
 
+.form-radio-btn input:checked + label {
+	background: #F3D0DB;
+    color: #1E0606;
+}
 
 .filter-item button {
     margin-top: 37px;
+    width: 95px;
 } 
  
 /* Products */
@@ -224,8 +230,7 @@ output {
 }
 
 .products-item {
-    width: 25%;
-    margin: 10px;
+    width: 380px;
     margin-right: 20px;
     margin-bottom: 30px;
 }
@@ -244,3 +249,107 @@ output {
     text-align: center;   
     color: #1E0606;
 }
+
+.container-link {
+    position: relative;    
+}
+
+.container-link:before,
+.container-link:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    outline:none;
+}
+
+.container-link:before {
+    content: " ";
+    background-image: url(../images/Rectangle\ 63.png);
+    background-size: 207px 207px;
+    background-repeat: no-repeat;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 207px;
+    height: 207px;
+    opacity: 0;
+}
+
+.container-link:after {
+    content: " LEARN MORE";
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    opacity: 0;
+    width: 184px;
+    height: 29px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E0606;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.container-link:hover:before,
+.container-link:hover:after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container-link:active:before,
+.container-link:active:after {
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+/* .checkbox label:before,
+.checkbox label:after,
+.radiobox label:before,
+.radiobox label:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    outline:none;
+}
+
+.checkbox label:before {
+    width: 19px;
+    height: 19px;
+    top: 0;
+    left: 0;    
+    border: 2px solid #C29974;
+    border-radius: 20%;
+}
+
+.checkbox label:after {
+    content: " ";
+    background-image: url(../images/Vector\ 1\ \(Stroke\).png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+}
+
+.input:checked + label:after {
+    opacity: 1;
+}
+
+.input:checked:hover + label:hover {
+    opacity: 1;
+    text-decoration: underline;
+} */

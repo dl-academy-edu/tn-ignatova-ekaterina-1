@@ -14,8 +14,6 @@
 .products-list {
     display: flex; 
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     margin: 0 -10px -20px;
 }
 
@@ -26,7 +24,9 @@
     margin-bottom: 23px;
 }
 
-/* продукт 1 */
+.products-item:nth-child(4) {
+    margin-left: 200px;
+}
 
 .first-product {
     background: #DBE4DB;
@@ -160,7 +160,7 @@
 .description {
     max-width: 680px;
     width: 100%;
-    margin: 0 auto; 
+    margin-left: 187px; 
     margin-bottom: 55px;
 }
 
