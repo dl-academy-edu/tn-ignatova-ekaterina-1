@@ -1,5 +1,7 @@
 .contacts-box {
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
 } 
 
 .contact-form {
@@ -12,7 +14,9 @@
 
 .contact-form fieldset{
     border: none;
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
     max-width: 0%;
     margin: 0;
     padding: 0;
@@ -27,22 +31,32 @@
 }
 
 .contact-wrapper {
-    display: flex;  
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;  
 }
 
 div .form-name {
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;    
     width: 600px;
     bottom: 50px;
 }
 
 .contact-block {
-    flex-direction: column;
+    -webkit-flex-direction: column; 
+        -moz-flex-direction: column;  
+            flex-direction: column;
     width: 290px;
     margin-right: 20px;
 }
 
 .contact-wrapper:focus-within label {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-container:focus-within label {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -124,7 +138,8 @@ div .form-name {
     opacity: 1;
 }
 
-.input:checked:hover + label:hover {
+.input:checked:hover + label:hover,
+.input:checked:focus + label:focus {
     opacity: 1;
     text-decoration: underline;
 }

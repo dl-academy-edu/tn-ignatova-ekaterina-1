@@ -8,8 +8,12 @@
 }
 
 .filter-form {
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;    
     max-width: 1095px;
     width: 100%;
     padding-top: 42px;
@@ -131,7 +135,8 @@ output {
     opacity: 1;
 }
 
-.input:checked:hover + label:hover {
+.input:checked:hover + label:hover,
+.input:checked:focus + label:focus {
     opacity: 1;
     text-decoration: underline;
 }
@@ -165,7 +170,8 @@ output {
     opacity: 1;
 }
 
-.radio:checked:hover + label:hover {
+.radio:checked:hover + label:hover,
+.radio:checked:focus + label:focus {
     opacity: 1;
     text-decoration: underline;
 }
@@ -192,7 +198,8 @@ output {
     background:#fff;
 }
 
-.form-radio-btn input:hover + label {
+.form-radio-btn input:hover + label,
+.form-radio-btn input:focus + label {
 	background: #EDDEEB;
     color: #877379;
 }
@@ -223,9 +230,15 @@ output {
 }
 
 .products-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;    
+    -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin: 0 -10px -20px;
 }
 
@@ -277,7 +290,7 @@ output {
 }
 
 .container-link:after {
-    content: " LEARN MORE";
+    content: "LEARN MORE";
     margin: 0;
     top: 50%;
     left: 50%;
@@ -301,7 +314,9 @@ output {
 }
 
 .container-link:hover:before,
-.container-link:hover:after {
+.container-link:hover:after,
+.container-link:focus:before,
+.container-link:focus:after {
     opacity: 1;
     cursor: pointer;
 }
@@ -311,45 +326,3 @@ output {
     opacity: .7;
     cursor: pointer;
 }
-
-
-/* .checkbox label:before,
-.checkbox label:after,
-.radiobox label:before,
-.radiobox label:after {
-    content: " ";
-    position: absolute;
-    display: block;
-    outline:none;
-}
-
-.checkbox label:before {
-    width: 19px;
-    height: 19px;
-    top: 0;
-    left: 0;    
-    border: 2px solid #C29974;
-    border-radius: 20%;
-}
-
-.checkbox label:after {
-    content: " ";
-    background-image: url(../images/Vector\ 1\ \(Stroke\).png);
-    background-size: 14px 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 13px;
-    height: 13px;
-    top: 5px;
-    left: 5px;
-    opacity: 0;
-}
-
-.input:checked + label:after {
-    opacity: 1;
-}
-
-.input:checked:hover + label:hover {
-    opacity: 1;
-    text-decoration: underline;
-} */
