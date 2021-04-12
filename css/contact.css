@@ -91,14 +91,14 @@ div .form-name {
 }
 
 .checkbox {
-    width: 542px;
+    width: 542px; 
+    outline: none;   
 }
 
-/* стили */
 .checkbox label {
     position: relative;
     padding-left: 30px;
-    cursor: pointer;
+    cursor: pointer;       
 }
 
 .input {
@@ -109,8 +109,7 @@ div .form-name {
 .checkbox label:after {
     content: "";
     position: absolute;
-    display: block;
-    outline:none;
+    display: block;    
 }
 
 .checkbox label:before {
@@ -118,7 +117,8 @@ div .form-name {
     height: 19px;
     top: 0;
     left: 0;    
-    border: 2px solid #C29974;
+    border: 2px solid #C29974;   
+    border-radius: 20%; 
 }
 
 .checkbox label:after {
@@ -132,6 +132,7 @@ div .form-name {
     top: 5px;
     left: 5px;
     opacity: 0;
+    outline: none; 
 } 
 
 .input:checked + label:after {
@@ -143,6 +144,11 @@ div .form-name {
     opacity: 1;
     text-decoration: underline;
 }
+
+.checkbox-label {
+    outline: none;
+}
+
 
 .support {
     padding-top: 0;

@@ -25,6 +25,7 @@
     margin: 10px;
     margin-right: 20px;
     margin-bottom: 23px;
+    overflow: hidden;
 }
 
 .products-item:nth-child(4) {
@@ -47,8 +48,6 @@
     text-align: center;    
 }
 
-/* продукт 2 */
-
 .second-product {
     background: #EADDD3;
     background-image: url("../images/product2.png"); 
@@ -63,8 +62,6 @@
     position: relative;
     text-align: center;    
 }
-
-/* продукт 3 */
 
 .third-product {
     background: #F8F2DA;
@@ -82,8 +79,6 @@
     text-align: center;    
 }
 
-/* продукт 4 */
-
 .fourth-product {
     background: #D5D4E1;
     background-image: url("../images/product4.png"); 
@@ -99,8 +94,6 @@
     position: relative;
     text-align: center;    
 }
-
-/* продукт 5 */
 
 .fifth-product {
     background: #F3D0DB;
@@ -118,8 +111,6 @@
     text-align: center;    
 }
 
-/* продукт 6 */
-
 .sixth-product {
     background: #E5EAF8;
     background-image: url("../images/product6.png"); 
@@ -134,10 +125,6 @@
     padding: 33px 4px;
     position: relative;
     text-align: center;    
-}
-
-.products-item .fourth-product {
-    margin: 50px;
 }
 
 .title-link {

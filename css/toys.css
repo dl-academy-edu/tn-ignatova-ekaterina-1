@@ -32,43 +32,14 @@
     color: #1E0606;
 }
 
-/* ползунок */
-
-.range-slider {
-    position: relative;    
-    width: 188px;
-    height: 89px;
-    left: -2px;
-    bottom: -12px;
+.box-range {
+    display: flex;
 }
 
-output {
-    position: absolute;
-    left: -9px;
-    bottom: 19px;
-    padding: 7px 10px;
-    color: black;
-    border-radius: 10px 10px 0 10px;
+.nomber-box {
+    display: flex;
+    justify-content: space-between;
     font-weight: bold;
-}
-
-.fader {
-    position: absolute;
-    left: 3px;
-    width: 188px;
-    height: 4px;
-    background:#C29974;
-    -webkit-appearance: none;
-    outline: none;
-    border-radius: 5px;
-}
-
-.fader::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #C29974;    
 }
 
 .checkbox {
@@ -92,6 +63,7 @@ output {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
+    outline: none;
 }
 
 .input,
@@ -106,7 +78,7 @@ output {
     content: " ";
     position: absolute;
     display: block;
-    outline:none;
+    outline: none;
 }
 
 .checkbox label:before {
@@ -145,8 +117,6 @@ output {
     opacity: .7;
 }
 
-/* radio */
-
 .radiobox label:before {
     width: 19px;
     height: 19px;
@@ -176,12 +146,11 @@ output {
     text-decoration: underline;
 }
 
-/* amount */
-
 .form-radio-btn {
 	display: inline-block;
 	margin: 0 -5px;
     padding: 0;
+    outline: none; 
 }
 
 .form-radio-btn input {
@@ -195,18 +164,18 @@ output {
 	font-size: 16px;
     line-height: 22px;
 	user-select: none;
-    background:#fff;
+    background:#fff;       
 }
 
 .form-radio-btn input:hover + label,
 .form-radio-btn input:focus + label {
 	background: #EDDEEB;
-    color: #877379;
+    color: #877379;      
 }
 
 .form-radio-btn input:checked + label {
 	background: #F3D0DB;
-    color: #1E0606;
+    color: #1E0606;     
 }
 
 .filter-item button {
@@ -226,7 +195,7 @@ output {
     text-transform: uppercase;
     text-align: left;
     font-size: 38px;
-    line-height: 46px;
+    line-height: 46px;    
 }
 
 .products-list {
@@ -239,20 +208,21 @@ output {
     -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin: 0 -10px -20px;
+    margin: 0 -10px -20px;    
 }
 
 .products-item {
     width: 380px;
     margin-right: 20px;
     margin-bottom: 30px;
+    overflow: hidden;    
 }
 
 .title-link {
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    color: #1E0606;
+    color: #1E0606;    
 }
 
 .price-link {
@@ -260,19 +230,19 @@ output {
     font-size: 16px;
     line-height: 22px;
     text-align: center;   
-    color: #1E0606;
+    color: #1E0606;    
 }
 
 .container-link {
-    position: relative;    
+    position: relative;  
+    outline:none;    
 }
 
 .container-link:before,
 .container-link:after {
     content: " ";
     position: absolute;
-    display: block;
-    outline:none;
+    display: block;   
 }
 
 .container-link:before {
@@ -286,7 +256,7 @@ output {
     transform: translate(-50%, -50%);
     width: 207px;
     height: 207px;
-    opacity: 0;
+    opacity: 0;     
 }
 
 .container-link:after {
@@ -302,7 +272,7 @@ output {
     opacity: 0;
     width: 184px;
     height: 29px;
-    font-family: Montserrat;
+    font-family: "Montserrat", Arial, sans-serif;;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -310,7 +280,7 @@ output {
     text-align: center;
     text-transform: uppercase;
     color: #1E0606;
-    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);      
 }
 
 .container-link:hover:before,
@@ -318,11 +288,11 @@ output {
 .container-link:focus:before,
 .container-link:focus:after {
     opacity: 1;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .container-link:active:before,
 .container-link:active:after {
     opacity: .7;
-    cursor: pointer;
+    cursor: pointer;   
 }

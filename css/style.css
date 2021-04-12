@@ -1,7 +1,6 @@
-#bottom {
+.main-page .header {
     margin-bottom: 120px;
 }
-
 
 /* slider */
 
@@ -81,7 +80,9 @@
     -webkit-display: flex;
         -moz-display: flex;
             display: flex;
-    justify-content: center;
+    -webkit-justify-content: center;
+        -moz-justify-content: center;
+            justify-content: center;
     padding: 11px;
     margin: 0;
 }
@@ -116,6 +117,7 @@
     margin: 10px;
     margin-right: 20px;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .container-link {
@@ -153,6 +155,14 @@
     width: 27px;
     background: none;
     margin-left: 16px;
+}
+
+.btn-control:hover {
+    opacity: .7;
+}
+
+.btn-control:active {
+    opacity: .5;
 }
 
 .info_item {
@@ -215,13 +225,6 @@
     line-height: 32px;  
     margin: 0;  
     height: 55px;
-}
-
-.delivery-input {
-    display: none;   
-} 
-
-.tabs-item {
     cursor: pointer;
 }
 
@@ -309,12 +312,14 @@
     text-decoration: none;
 }
 
-.contacts-content {
+.contacts-content  {
+    position: relative;
+    display: block;
     max-width: 543px;
-    max-height: 209px;
     background: #E1F0F7;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 50px;
 }
 
 .contacts-title {
@@ -329,6 +334,13 @@
 
 .contacts-item {
     margin-bottom: 20px;
+}
+
+.map {
+    position: absolute;
+    display: block;
+    background-position: center bottom;
+    border: none;
 }
 
 /* Модальное окно */
@@ -418,9 +430,9 @@ div .form-name {
 
 .checkbox {
     width: 542px;
+    outline: none;
 }
 
-/* стили */
 .checkbox label {
     position: relative;
     padding-left: 30px;
@@ -436,7 +448,7 @@ div .form-name {
     content: "";
     position: absolute;
     display: block;
-    outline:none;
+    
 }
 
 .checkbox label:before {
@@ -445,6 +457,7 @@ div .form-name {
     top: 0;
     left: 0;    
     border: 2px solid #C29974;
+    border-radius: 20%; 
 }
 
 .checkbox label:after {
@@ -458,6 +471,7 @@ div .form-name {
     top: 5px;
     left: 5px;
     opacity: 0;
+    outline: none;
 }
 
 .input:checked + label:after {
@@ -503,15 +517,18 @@ div .form-name {
     cursor: pointer;
     background: transparent;
     border: none;
+    outline:none;
 }
 
 .popup-close:hover svg path,
 .popup-close:focus svg path {
     fill:#FFFFFF;
     opacity: 0.5;
+    outline:none;
 }
 
 .popup-close:active svg path {
     fill:#FFFFFF;
     opacity: 0.3;
+    outline:none;
 }

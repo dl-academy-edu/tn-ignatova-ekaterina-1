@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header container" id="bottom">
+<body class="main-page">
+    <header class="header container">
         <a href="#">
             <svg class="header-logo" width="100" height="52" viewBox="0 0 100 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H18.1129C31.1202 0 40.4058 12.3713 40.4058 24.0356V27.7332C40.4058 39.3974 31.1202 51.7689 18.1129 51.7689H0V0ZM37.6192 24.0356C37.6192 13.5132 29.2167 2.77333 18.1129 2.77333H2.78661V48.9956H18.1129C29.2167 48.9956 37.6192 38.2557 37.6192 27.7333V24.0356Z" fill="#1E0606"/>
@@ -26,7 +25,7 @@
                 <li class="header-item"><a href="#">About us</a></li>       
             </ul>
         </nav>
-        <svg class="header-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  tabindex="0" class="header-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.365 3.26001C10.945 3.26001 8.16497 6.08001 8.16497 9.52001C8.16497 10.98 8.66497 12.3 9.48497 13.38L3.60498 19.32C3.26498 19.68 3.26498 20.24 3.60498 20.58C3.78498 20.76 4.00498 20.84 4.22498 20.84C4.46498 20.84 4.68497 20.76 4.86497 20.58L10.745 14.62C11.765 15.36 13.005 15.78 14.345 15.78C17.765 15.78 20.545 12.96 20.545 9.52001C20.565 6.06001 17.785 3.26001 14.365 3.26001ZM14.365 14.2C11.825 14.2 9.76497 12.1 9.76497 9.52001C9.76497 6.94001 11.825 4.84001 14.365 4.84001C16.905 4.84001 18.965 6.94001 18.965 9.52001C18.965 12.1 16.905 14.2 14.365 14.2ZM17.465 9.60001C17.425 9.94001 17.125 10.2 16.785 10.2C16.745 10.2 16.725 10.2 16.685 10.2C16.305 10.14 16.045 9.80001 16.085 9.42001C16.225 8.38001 15.065 7.84001 15.005 7.82001C14.665 7.66001 14.505 7.24001 14.665 6.90001C14.825 6.56001 15.225 6.40001 15.585 6.54001C15.665 6.56001 17.745 7.52001 17.465 9.60001ZM16.005 11.12C16.145 11.26 16.245 11.48 16.245 11.68C16.245 11.9 16.165 12.1 16.005 12.24C15.865 12.38 15.645 12.48 15.445 12.48C15.245 12.48 15.025 12.4 14.885 12.24C14.745 12.1 14.645 11.88 14.645 11.68C14.645 11.48 14.725 11.26 14.885 11.12C15.025 10.98 15.245 10.88 15.445 10.88C15.645 10.88 15.845 10.96 16.005 11.12Z" fill="#1E0606"/>
         </svg>
         <a class="header-contacts" href="#">Contact us</a>
@@ -68,14 +67,15 @@
                 <p class="slider-item">Designed in Slovenia</p>
                 <button class=" button slider-btn slider-js">EXPLORE NOW</button>
             </div>   
-                <img class="slider-img"src="images/slider1.png" alt="">
+                <img class="slider-img" src="images/slider1.png" alt="">
             </div>
-            <p class="slider-info">Free (continental) USA shipping on all orders of $100 USD or more!</p>                                 
+            <p class="slider-info">Free (continental) USA shipping on all orders of $100 USD or more!
+            </p>                                 
         </section>
         <section class="products container">
                 <h2 class="products-title">Category Products</h2>
                 <ul class="outline products-list">
-                <li class="products-item">
+                <li class="products-item">      
                     <div class="container-link" tabindex="0">
                         <a href="#">
                         <img src= "images/prod1.jpg" alt="" width="280" height="270">
@@ -121,45 +121,29 @@
                         <path d="M12 5L25 18L12 31" stroke="#1E0606" stroke-width="4"/>
                         </svg>                                      
                 </button>
+                </div>
             <div tabindex="0">
                 <p class="info_item">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
             </div>
-        </section>
-        </section>
+        </section>          
         <section class="delivery container">
             <img class="delivery-img" src="images/delivery.jpg" alt="" width="480" height="559">
             <div class="delivery-info" tabindex="0">
                 <h2 class="delivery-title">Delivery</h2>
-                <div class="delivery-tabs" tabindex="0">
-                    <input  class="delivery-input" type="radio" name="tabs" id="tab-first">
-                    <label class="tab-first" for="tab-first">
-                        <p class="tabs-item checked">Delivery</p>
-                    </label>
-                    <input class="delivery-input" type="radio" name="tabs" id="tab-second">
-                    <label class="tab-second" for="tab-second">
-                        <p class="tabs-item">Guarantee</p>
-                    </label>
-                    <input class="delivery-input" type="radio" name="tabs" id="tab-third">
-                    <label class="tab-third" for="tab-third">
+                <div class="delivery-tabs" tabindex="0">                    
+                        <p class="tabs-item checked">Delivery</p>                    
+                        <p class="tabs-item">Guarantee</p>                    
                         <p class="tabs-item">Credit</p>
-                    </label>
-                    <div class="tab-content-1" class="tab-content" tabindex="0">
-                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
+                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.
                         </p>
-                        <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                    </div> 
-                    <!-- <div  class="tab-content-2" id="tab-content-2" class="tab-content">
-                        <p>рррррррррррррррррррррррррррррррррррррррррррррррррррррр tab-content-2</p>
-                    </div> 
-                    <div class="tab-content-3" id="tab-content-3" class="tab-content">
-                        <p>nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn content-3</p>
-                    </div>  -->
+                        <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!                            
+                        </p>                    
                 </div>
                 <button class="button delivery-btn">LEARN MORE</button>
             </div>
         </section>
         <section class="brands container">
-            <h2 class="hidden">Brands</h2>
+            <h2 class="hidden" tabindex="0">Brands</h2>
             <ul class="outline brands-list">
                 <li class="brands-item"><img src="images/brand1.png" alt="" width="193" height="60"></li>
                 <li class="brands-item"><img src="images/brand2.png" alt="" width="179" height="61"></li>
@@ -171,14 +155,15 @@
             <div class="about-content" tabindex="0">
                 <h2 class="about-title">Design Life Kids</h2>
                 <h3 class="about-title-second">About Us</h3>
-                <p class="about-item">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.               
+                <p class="about-item">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical. 
                 </p>
                 <a href="#" class="button about-btn">buy now</a>
             </div>        
         <div class="contacts-content" tabindex="0">
                 <h2 class="contacts-title">Contacts</h2>
-                <p class="contacts-item">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae975d5d0230c97fc17fe4170bcd64da9bd5d640035324b55dcba715d358a7b22&amp;source=constructor" width="483" height="196" frameborder="0" style="border:0"></iframe>
+                <p class="contacts-item">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.                    
+                </p>
+                <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae975d5d0230c97fc17fe4170bcd64da9bd5d640035324b55dcba715d358a7b22&amp;source=constructor" width="483" height="196"></iframe>
         </div>
     </section>
     </main>
@@ -194,7 +179,7 @@
                         <li class="footer-item"><a class="footer-link" href="#">Design Services</a></li>
                         <li class="footer-item"><a class="footer-link" href="#">Featured On</a></li> 
                         <li class="footer-item"><a class="footer-link" href="#">2018 Holiday Catalog</a></li>
-                        <li class="footer-item"><a class="footer-link" href="#">Shop By Designer</a></li>       
+                        <li class="footer-item"><a class="footer-link" href="#">Shop By Designer</a></li>
                     </ul>
                 </nav>
             </div>
@@ -212,8 +197,8 @@
             </nav>
         </div>
         <div class="footer-block-item item_block" tabindex="0">
-            <h4 >Connect</h4>
-            <form class="form-container"action="#" method="POST" class="">
+            <h4>Connect</h4>
+            <form class="form-container" action="#" method="POST">
                 <input name="mail" type="email" placeholder="Email">
                 <button class="footer-btn" type="submit">Join</button>
             </form>  
@@ -253,28 +238,29 @@
         <div class="footer-copyright" tabindex="0">
             <div class="rating-item" tabindex="0">
                 <p>Company Rating</p>
-            </div>
-            <div class="rating-item" tabindex="0">
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="#836E5B"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z" fill="white"/>
-                </svg>
-            </div>
+            </div>            
+                <div class="rating-wrapper" tabindex="0">        
+                    <div class="rating-wrapper-items">
+                      <input class="rating-wrapper-item" type="radio" name="radio" id="rating-item-5" value="5">
+                      <label class="rating-wrapper-label" for="rating-item-5"  tabindex="0"></label>
+                
+                      <input class="rating-wrapper-item" type="radio" name="radio" id="rating-item-4" value="4">
+                      <label class="rating-wrapper-label" for="rating-item-4"  tabindex="0"></label>
+                
+                      <input class="rating-wrapper-item" type="radio" name="radio" id="rating-item-3" value="3">
+                      <label class="rating-wrapper-label" for="rating-item-3"  tabindex="0"></label>
+                
+                      <input class="rating-wrapper-item" type="radio" name="radio" id="rating-item-2" value="2">
+                      <label class="rating-wrapper-label" for="rating-item-2"  tabindex="0"></label>
+                
+                      <input class="rating-wrapper-item" type="radio" name="radio" id="rating-item-1" value="1">
+                      <label class="rating-wrapper-label" for="rating-item-1"  tabindex="0"></label>
+                </div>                 
+            </div>   
             <div class="copyright-item" tabindex="0">   
                 <p>Copyright © 2018 Dlk • Design Life Kids</p>
             </div> 
-            <div class="copyright-item" tabindex="0">
+            <div class="copyright-item-link" tabindex="0">
                 <a class="copyright-link" href="https://directline.digital/"> Web Design — Direct Line Development</a>
             </div>
         </div>
@@ -284,9 +270,17 @@
 
 
     
+
+
+
+
+
+
+
+    
 <div class="popup-overlay" tabindex="0"></div>
     <div class="popup-form" tabindex="0">
-        <h1 class="hidden">Modal window</h1>
+        <h2 class="hidden">Modal window</h2>
         <button class="popup-close"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z" fill="white"/>
             </svg>
@@ -295,7 +289,7 @@
             <fieldset class="contact-container">
                 <div class="form-name" tabindex="0">
                     <label for="form-name" class="form-label">Name</label>
-                    <input class="form-name" id="form-name" type="text" name="name" class="form-input" placeholder="Ivan Ivanov">                    
+                    <input class="form-name form-input" id="form-name" type="text" name="name" placeholder="Ivan Ivanov">                    
                 </div>
             </fieldset>
             <fieldset class="contact-wrapper">
@@ -311,7 +305,7 @@
             <fieldset class="contact-wrapper">
                 <div tabindex="0">
                     <label for="form-message" class="form-label">Message</label>                    
-                    <textarea id="form-message" type="text" name="message" class="form-textarea" cols="30" rows="3"></textarea>                    
+                    <textarea id="form-message" name="message" class="form-textarea" cols="30" rows="3"></textarea>                    
                 </div>
             </fieldset>
             <fieldset >

@@ -1,8 +1,5 @@
-/* outline:none влияет на доступность */
-
 *  {
-    box-sizing: border-box;
-    outline: none; 
+    box-sizing: border-box;    
 }
 
 body {
@@ -75,19 +72,22 @@ footer a {
     border: none;
     text-transform: uppercase;
     display: block;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .button:hover, .button:focus {
     background: #C29974;
+    outline:none;
 }
 
 .button:active {
     background: #CFAF91;
+    outline:none;
 }
 
 .button:disabled {
     background: #C1C1C1;
+    outline:none;
 }
 
 /* Header */
@@ -107,12 +107,12 @@ footer a {
 }
 
 .header-logo:hover, .header-logo:focus {
-    opacity: .5;
+    opacity: .5;     
 }
 
 .header-logo:active {
     opacity: .2;
-}
+}                                   
 
 .header-nav {
     margin: 0 auto 0 60px;
@@ -199,12 +199,12 @@ footer a {
     margin-right: 5px;
 }
   
-  .breadcrumbs-item:not(:last-child):after {
+.breadcrumbs-item:not(:last-child):after {
     content: ">";
     margin-left: 5px;
 }
   
-  .breadcrumbs-link {
+.breadcrumbs-link {
     color: #1E0606;  
     text-decoration: none;
 }
@@ -229,6 +229,7 @@ footer a {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
+    outline: none;
 }
 
 .pagination-nav {
@@ -303,8 +304,8 @@ a:hover svg path, a:focus svg path {
 input[type="email"] {
     background: #666666;
     border: 2px solid transparent;
-    max-width: 300px;
-    margin-left: 10px;
+    max-width: 300px;    
+    outline: none;
 }
 
 input[type="email"]:hover,
@@ -325,7 +326,8 @@ input[type="email"]:active {
     text-transform: uppercase;
     max-width: 80px;
     padding: 9px 22px;
-    cursor: pointer;    
+    cursor: pointer;  
+    outline:none;  
 }
 
 .social-link:hover, .social-link:focus {
@@ -367,23 +369,73 @@ div > h4 {
 }
 
 .social-item {
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
 }
 
 .footer-copyright {
     -webkit-display: flex;
         -moz-display: flex;
             display: flex;
-    border-top:2px solid #A2A2A2;
-}
-
-.rating-item,
-.copyright-item {
-    margin:auto;
+    border-top:2px solid #A2A2A2;    
 }
 
 .rating-item {
-    margin-left: 0;
+    margin-left: 8px;
+    margin-right: 25px;
+    outline: none;
+}
+
+.rating-wrapper    {
+    position: relative;
+    font-size: 23px;
+    display: inline-block;  
+    margin-top: 15px;     
+}   
+
+.rating-wrapper::before {
+    content: '★★★★★';
+    display: block;   
+}
+
+.rating-wrapper-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-flex-direction: row-reverse;
+        -moz-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    overflow: hidden;    
+}
+
+.rating-wrapper-item {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;    
+}
+
+.rating-wrapper-label {
+    -webkit-flex: 0 0 20%;
+        -moz-flex: 0 0 20%;
+            flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #FFFFFF;
+    outline: none; 
+}
+
+.rating-wrapper-label:before {
+    content: '★';
+    display: block;    
 }
 
 .rating-item:hover, .rating-item:focus {
@@ -395,22 +447,32 @@ div > h4 {
     color: #C29974;
 }
 
-.rating-item:hover svg:not(:last-child) path,
-.rating-item:focus svg:not(:last-child) path {
-    fill:#836E5B;
+.rating-wrapper-label:hover,
+.rating-wrapper-label:hover ~ .rating-wrapper-label:not(:first-child) {
+    color: #836E5B;
 }
 
-.rating-item:active svg:not(:last-child) path {
-    fill:#C29974;
-} 
+.rating-wrapper-label:active,
+.rating-wrapper-label:active ~ .rating-wrapper-label:not(:first-child) {
+    color: #C29974;
+}
+
+.copyright-item {
+    margin-left: 155px;    
+}
+
+.copyright-item-link {
+    padding-top: 17px;
+    margin-left: 109px;    
+}
 
 .copyright-link {
     color: #A2A2A2;
-    text-decoration: none;
+    text-decoration: none;      
 }
 
 .copyright-link:hover, .copyright-link:focus {
     color:#FFFFFF;
     text-decoration: underline;
     background: none;
-}   
+} 
