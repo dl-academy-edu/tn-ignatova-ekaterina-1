@@ -5,6 +5,7 @@
     width: 100%;
     margin: 0 auto; 
     background: rgba(125, 151, 218, 0.2);
+    margin-bottom: 54px;
 }
 
 .filter-form {
@@ -17,8 +18,8 @@
     max-width: 1095px;
     width: 100%;
     padding-top: 42px;
-    padding-left: 110px;
-    margin-bottom: 60px;
+    padding-left: 73px;
+    padding-bottom: 20px;
 }
 
 .filter-form fieldset {
@@ -222,7 +223,8 @@
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    color: #1E0606;    
+    color: #1E0606;  
+    margin-top: 30px;  
 }
 
 .price-link {
@@ -272,7 +274,7 @@
     opacity: 0;
     width: 184px;
     height: 29px;
-    font-family: "Montserrat", Arial, sans-serif;;
+    font-family: "Montserrat", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;

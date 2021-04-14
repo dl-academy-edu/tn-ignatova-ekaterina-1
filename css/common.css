@@ -179,9 +179,10 @@ footer a {
 /* Breadcrumbs */
 
 .breadcrumbs {
-    margin-left: 0 auto;  
+    margin-left: 0 auto;
+    margin-bottom: 50px;  
     list-style-type: none;
-    font-family:Crimson Text;
+    font-family:"Crimson Text", Arial, sans-serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
@@ -217,9 +218,15 @@ footer a {
 /* Pagination */
 
 .pagination {
+    font-family: "Montserrat", Arial, sans-serif; ;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
     padding-top: 0%;
     padding-bottom: 0%;
-    margin-top: 50px;
+    margin-top: 35px;    
     -webkit-display: flex;
         -moz-display: flex;
             display: flex;
@@ -227,8 +234,7 @@ footer a {
         -moz-align-items: center;
             align-items: center;
     font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
+    line-height: 19px;    
     outline: none;
 }
 
@@ -246,8 +252,9 @@ footer a {
 }
 
 .pagination-item {
-    margin-right: 67px; 
-    list-style-type: none;
+    margin-right: 47px; 
+    list-style-type: none;    
+    margin-left: 5px;    
 }
 
 .pg-active {
@@ -267,8 +274,8 @@ a:hover svg path, a:focus svg path {
 }
 
 .footer-content  {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;    
+    padding-bottom: 130px; 
 }
 
 .footer-first-block {
@@ -298,7 +305,7 @@ a:hover svg path, a:focus svg path {
 .form-container {
     -webkit-display: flex;
         -moz-display: flex;
-            display: flex;
+            display: flex;    
 }
 
 input[type="email"] {

@@ -7,7 +7,7 @@
 .slider {
     background-image: url("images/slider1.jpg");
     background: #EEE4DB;
-    margin-bottom: 90px;
+    margin-bottom: 97px;
 }
 
 .slider-content {
@@ -24,8 +24,8 @@
         -moz-flex-direction: column;  
             flex-direction: column;
     max-width: 30px;
-    margin-top: 17px;
-    margin-left: 5px;
+    margin-top: 25px;
+    margin-left: -8px;
     cursor: pointer;
 }
 
@@ -47,11 +47,14 @@
     font-weight: bold;
     font-size: 40px;
     line-height: 110%; 
+    margin-top: 37px;
+    margin-left: -8px;
     margin-bottom: 20px; 
 }
 
 .slider-btn {
     max-width: 161px;
+    margin-left: -10px;
 }
 
 .slider-img {
@@ -67,6 +70,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    margin-left: -8px;
 }
 
 .slider-info {
@@ -83,7 +87,7 @@
     -webkit-justify-content: center;
         -moz-justify-content: center;
             justify-content: center;
-    padding: 11px;
+    padding: 11px;    
     margin: 0;
 }
 
@@ -145,20 +149,20 @@
 .products-info {
     -webkit-display: flex;
         -moz-display: flex;
-            display: flex;
-    max-width: 680px;
-    margin-bottom: 0;
+            display: flex;  
+    max-width: 680px; 
 }
 
 .btn-control {
     border: none;
     width: 27px;
     background: none;
-    margin-left: 16px;
+    margin-right: 15px;
+    outline: none;   
 }
 
 .btn-control:hover {
-    opacity: .7;
+    opacity: .7;    
 }
 
 .btn-control:active {
@@ -166,7 +170,7 @@
 }
 
 .info_item {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 /* delivery */
@@ -183,6 +187,7 @@
 
 .delivery-img {
     background-color:#C9DFEC;
+    margin-top: -19px;
 }
 
 .delivery-info {
@@ -193,8 +198,8 @@
         -moz-flex-direction: column;  
             flex-direction: column;    
     max-width: 540px;
-    margin-top: 30px;
-    margin-left: 60px;
+    margin-top: 9px;
+    margin-left: 10px;
     margin-bottom: 57px;
 }    
 
@@ -206,7 +211,8 @@
     font-size: 38px;
     line-height: 46px;
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 20px;  
+    margin-left: -37px;  
 }
 
 .delivery-tabs {
@@ -216,6 +222,7 @@
     -webkit-flex-direction: column; 
         -moz-flex-direction: column;  
             flex-direction: column;    
+    margin-left: -37px;        
 }
 
 .tabs-item {
@@ -225,7 +232,7 @@
     line-height: 32px;  
     margin: 0;  
     height: 55px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .checked {
@@ -244,11 +251,21 @@
     height: 55px;
 } 
 
+.tabs-item:hover:not(.checked) {
+    opacity: .5;
+}
+
 .delivery-btn {
     max-width: 149px;
+    margin-top: 12px;
+    margin-left: -37px;
 }
 
 /* Brands */
+
+.brands {
+    margin-bottom: 108px;    
+}
 
 .brands-list {
     -webkit-display: flex;
@@ -270,18 +287,15 @@
 .about {
     -webkit-display: flex;
         -moz-display: flex;
-            display: flex;
-    -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-            justify-content: space-between;    
-    margin-bottom: 60px;
-}
+            display: flex;    
+    margin-bottom: 135px;
+}    
 
 .about-content {
     max-width: 543px;
-    background: #E1F0F7;
-    margin-right: 57px;
+    background: #E1F0F7;    
     padding: 10px 30px 35px;
+    margin-right: 57px;
 }
 
 .about-title {
@@ -291,7 +305,7 @@
     font-size: 38px;
     line-height: 46px;
     margin-top: -36px;
-    margin-bottom: 10px;
+    margin-bottom: -12px;
 }
 
 .about-title-second {
@@ -308,9 +322,10 @@
 }
 
 .about-btn {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
+    margin-top: 16px;
     text-decoration: none;
-}
+}  
 
 .contacts-content  {
     position: relative;
@@ -329,18 +344,19 @@
     font-size: 38px;
     line-height: 46px;
     margin-top: -26px;
+    margin-left: -3px;
     margin-bottom: 10px;
 }
 
 .contacts-item {
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .map {
     position: absolute;
     display: block;
     background-position: center bottom;
-    border: none;
+    border: none;    
 }
 
 /* Модальное окно */
@@ -447,8 +463,7 @@ div .form-name {
 .checkbox label:after {
     content: "";
     position: absolute;
-    display: block;
-    
+    display: block;    
 }
 
 .checkbox label:before {
@@ -470,8 +485,7 @@ div .form-name {
     height: 13px;
     top: 5px;
     left: 5px;
-    opacity: 0;
-    outline: none;
+    opacity: 0;    
 }
 
 .input:checked + label:after {
@@ -483,6 +497,10 @@ div .form-name {
     opacity: 1;
     text-decoration: underline;
 }
+
+.checkbox-label {
+    outline: none; 
+} 
 
 /* modal */
 

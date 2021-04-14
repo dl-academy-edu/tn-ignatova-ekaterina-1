@@ -132,8 +132,7 @@ div .form-name {
     top: 5px;
     left: 5px;
     opacity: 0;
-    outline: none; 
-} 
+}   
 
 .input:checked + label:after {
     opacity: 1;
@@ -146,17 +145,24 @@ div .form-name {
 }
 
 .checkbox-label {
-    outline: none;
-}
+   outline: none; 
+} 
 
+.button .form-button {
+    max-width: 106px;
+}
 
 .support {
     padding-top: 0;
     padding-left: 120px;
 }
 
+.support > p {
+    margin-top: 0;
+}
+
 .support-item {
-    font-family: Montserrat;
+    font-family: "Montserrat", Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 26px;

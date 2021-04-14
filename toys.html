@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Toys</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/toys.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">    
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -48,9 +48,9 @@
         <section class="filter-box">
             <h2 class="hidden">Filter</h2>
                 <form action="#" method="POST" class="filter-form">
-                            <fieldset>                               
+                            <fieldset tabindex="0">                               
                                     <legend>Cost</legend>  
-                                        <div class="box-range">
+                                        <div class="box-range" tabindex="0">
                                         <div class="el-1"><svg width="46" height="4" viewBox="0 0 46 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="46" height="4" fill="#C29974"/>
                                                 </svg>
@@ -67,10 +67,10 @@
                                                     </div>
                                                     <div class="nomber-box">
                                                         <div class="nomber-1">0</div>
-                                                        <div class="nomber-2">600</div>
+                                                        <div class="nomber-2">500</div>
                                                     </div>
                             </fieldset>            
-                            <fieldset>
+                            <fieldset tabindex="0">
                                 <legend>Color</legend>
                                 <div class="checkbox" tabindex="0">
                                     <input class="input" type="checkbox" id="contant-black" checked>
@@ -89,7 +89,7 @@
                                     <label for="contant-white" tabindex="0">White</label>
                                 </div>               
                             </fieldset>                                        
-                            <fieldset>
+                            <fieldset tabindex="0">
                                 <legend>Delivery</legend>                                
                                 <div class="radiobox" tabindex="0">
                                     <input class="radio" type="radio" name="radio" id="shipping-free">
@@ -100,19 +100,19 @@
                                     <label for="shipping-fast"  tabindex="0">Fast shipping</label>
                                 </div>
                             </fieldset>
-                            <fieldset class="amount-box">
+                            <fieldset class="amount-box" tabindex="0">
                                 <legend>Amount</legend>
                                 <div class="form-radio-btn" tabindex="0">
                                     <input class="amount" id="radio-1" type="radio" name="radio-amount" value="1" checked>
-                                    <label  for="radio-1">0-5</label>
+                                    <label  for="radio-1" tabindex="0">0-5</label>
                                 </div>                                 
                                 <div class="form-radio-btn" tabindex="0">
                                     <input  class="amount" id="radio-2" type="radio" name="radio-amount" value="2">
-                                    <label for="radio-2">10-20</label>
+                                    <label for="radio-2" tabindex="0">10-20</label>
                                 </div>                                 
                                 <div class="form-radio-btn" tabindex="0">
                                     <input  class="amount" id="radio-3" type="radio" name="radio-amount" value="3">
-                                    <label for="radio-3">20-50</label>
+                                    <label for="radio-3" tabindex="0">20-50</label>
                                 </div>                                           
                             </fieldset>                                                               
                             <div class="filter-item" tabindex="0">
