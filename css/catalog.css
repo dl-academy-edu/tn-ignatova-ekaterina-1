@@ -4,10 +4,14 @@
     margin: 0 auto; 
 }
 
+.catalog-title {
+    margin-bottom: -2px;
+}
+
 /* Products */
 
 .products {
-    margin-bottom: 42px;
+    margin-bottom: 32px;
 }
 
 .products-list {
@@ -141,8 +145,7 @@
     text-transform: uppercase;
 }
 
-.title-link:hover,
-.title-link:focus {
+.title-link:hover {
     text-decoration: underline;
 }
 
@@ -155,15 +158,9 @@
     margin-bottom: 55px;
 }
 
-.description-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 38px;
-    line-height: 46px;    
+.description-title {      
     margin-left: 10px;    
-    margin-bottom: 33px;    
+    margin-bottom: 27px;    
 }
 
 .description-item {

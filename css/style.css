@@ -1,5 +1,5 @@
 .main-page .header {
-    margin-bottom: 120px;
+    margin-bottom: 125px;
 }
 
 /* slider */
@@ -29,8 +29,19 @@
     cursor: pointer;
 }
 
+.toggle-number {
+    margin-left: 38px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
 .toggle-list {
-    list-style-type: none;
+    list-style-type: none;  
+    margin-top: 7px;  
+}
+
+.toggle-item {
+    margin-bottom: -8px;
 }
 
 .toggle-item:hover svg rect {
@@ -42,14 +53,10 @@
     margin-left: 120px;
 }
 
-.page-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 110%; 
-    margin-top: 37px;
-    margin-left: -8px;
-    margin-bottom: 20px; 
+.slider-title {
+    margin-top: 34px;
+    margin-bottom: -3px;
+    margin-left: -10px;
 }
 
 .slider-btn {
@@ -70,11 +77,10 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
-    margin-left: -8px;
+    margin-left: -8px;   
 }
 
 .slider-info {
-    font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 16px;
@@ -98,13 +104,8 @@
 }
 
 .products-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 38px;
-    line-height: 46px;
-}
+    margin-bottom: 20px;
+} 
 
 .products-list {
     -webkit-display: flex;
@@ -127,6 +128,22 @@
 .container-link {
     position: relative;
     text-align: center;    
+}
+
+.products-img-one {
+    background: #DBE4DB;
+}
+
+.products-img-two {
+    background: #EADDD3;
+}
+
+.products-img-three {
+    background: #F8F2DA;
+}
+
+.products-img-four {
+    background: #D5D4E1;
 }
 
 .title-link {
@@ -157,8 +174,9 @@
     border: none;
     width: 27px;
     background: none;
-    margin-right: 15px;
-    outline: none;   
+    margin-right: 23px;
+    margin-left: -7px;
+    outline: none;  
 }
 
 .btn-control:hover {
@@ -166,11 +184,15 @@
 }
 
 .btn-control:active {
-    opacity: .5;
+    opacity: .5;    
+}
+
+.btn-control:focus {
+    opacity: .3;    
 }
 
 .info_item {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 /* delivery */
@@ -182,7 +204,7 @@
     -webkit-justify-content: space-between;
         -moz-justify-content: space-between;
             justify-content: space-between;    
-    margin-bottom: 90px;
+    margin-bottom: 93px;
 }
 
 .delivery-img {
@@ -204,16 +226,8 @@
 }    
 
 .delivery-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 38px;
-    line-height: 46px;
-    margin: 0;
-    margin-bottom: 20px;  
-    margin-left: -37px;  
-}
+    margin: 3px 0px 21px -40px;
+}  
 
 .delivery-tabs {
     -webkit-display: flex;
@@ -222,7 +236,7 @@
     -webkit-flex-direction: column; 
         -moz-flex-direction: column;  
             flex-direction: column;    
-    margin-left: -37px;        
+    margin-left: -40px;        
 }
 
 .tabs-item {
@@ -255,10 +269,20 @@
     opacity: .5;
 }
 
+.tabs-item-content-one {
+    margin-top: 6px;
+    margin-right: 100px;
+}
+
+.tabs-item-content-two {
+    margin-top: 2px;
+    margin-right: 100px;
+}
+
 .delivery-btn {
     max-width: 149px;
     margin-top: 12px;
-    margin-left: -37px;
+    margin-left: -40px;
 }
 
 /* Brands */
@@ -277,7 +301,7 @@
     margin-bottom: 90px;
 }
 
-.brands-item:hover, .brands-item:focus {
+.brands-item:hover {
     opacity: .5;
     cursor: pointer;
 }
@@ -288,7 +312,7 @@
     -webkit-display: flex;
         -moz-display: flex;
             display: flex;    
-    margin-bottom: 135px;
+    margin-bottom: 143px;
 }    
 
 .about-content {
@@ -299,11 +323,6 @@
 }
 
 .about-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 38px;
-    line-height: 46px;
     margin-top: -36px;
     margin-bottom: -12px;
 }
@@ -314,7 +333,7 @@
     font-weight: normal;
     font-size: 26px;
     line-height: 32px;
-    margin-bottom: 10px;
+    margin-bottom: -7px;
 }
 
 .about-item {
@@ -322,8 +341,8 @@
 }
 
 .about-btn {
-    margin-bottom: 10px;
-    margin-top: 16px;
+    margin-bottom: 3px;
+    margin-top: 22px;
     text-decoration: none;
 }  
 
@@ -338,18 +357,13 @@
 }
 
 .contacts-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 38px;
-    line-height: 46px;
     margin-top: -26px;
     margin-left: -3px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 
 .contacts-item {
-    margin-bottom: 20px;    
+    margin-bottom: 24px;    
 }
 
 .map {
@@ -360,149 +374,6 @@
 }
 
 /* Модальное окно */
-
-.contact-form {
-    max-width: 680px;
-    width: 100%;
-    background: #E5EAF8;
-    margin: 0 auto 60px;
-    padding: 42px 40px;
-}
-
-.contact-form fieldset{
-    border: none;
-    -webkit-display: flex;
-        -moz-display: flex;
-            display: flex;
-    max-width: 0%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;    
-}
-
-.contact-form label {
-    font-size: 14px;
-    line-height: 19px;
-    color: #1E0606;
-    margin-bottom: 3px;
-}
-
-.contact-wrapper {
-    -webkit-display: flex;
-        -moz-display: flex;
-            display: flex;  
-}
-
-div .form-name {
-    width: 600px;
-    bottom: 50px;
-}
-
-.contact-block {
-    -webkit-flex-direction: column; 
-        -moz-flex-direction: column;  
-            flex-direction: column;
-    width: 290px;
-    margin-right: 20px;
-}
-
-.contact-wrapper:focus-within label {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.contact-container:focus-within label {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.contact-form input,
-.contact-form textarea {
-    height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 12px 20px;
-    font-size: 18px;
-    line-height: 25px;        
-}  
-
-.contact-form textarea {
-    width: 600px;
-    height: auto;
-    resize: none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-.contact-form input:focus + label,
-.contact-form textarea:focus + label {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.contact-form input::placeholder {
-    color: #1E0606;
-}
-
-.checkbox {
-    width: 542px;
-    outline: none;
-}
-
-.checkbox label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-}
-
-.input {
-    display: none;
-}
-
-.checkbox label:before,
-.checkbox label:after {
-    content: "";
-    position: absolute;
-    display: block;    
-}
-
-.checkbox label:before {
-    width: 19px;
-    height: 19px;
-    top: 0;
-    left: 0;    
-    border: 2px solid #C29974;
-    border-radius: 20%; 
-}
-
-.checkbox label:after {
-    content: " ";
-    background-image: url(../images/Vector\ 1\ \(Stroke\).png);
-    background-size: 14px 14px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 13px;
-    height: 13px;
-    top: 5px;
-    left: 5px;
-    opacity: 0;    
-}
-
-.input:checked + label:after {
-    opacity: 1;
-}
-
-.input:checked:hover + label:hover, 
-.input:checked:focus + label:focus {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.checkbox-label {
-    outline: none; 
-} 
-
-/* modal */
 
 .popup-overlay {
     width: 100%;
@@ -538,8 +409,7 @@ div .form-name {
     outline:none;
 }
 
-.popup-close:hover svg path,
-.popup-close:focus svg path {
+.popup-close:hover svg path {
     fill:#FFFFFF;
     opacity: 0.5;
     outline:none;

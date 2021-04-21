@@ -24,6 +24,7 @@
 
 .filter-form fieldset {
     border: none;
+    margin-left: -34px;
 }
 
 .filter-form legend {
@@ -37,7 +38,7 @@
     display: flex;
 }
 
-.nomber-box {
+.number-box {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -56,15 +57,14 @@
 
 .checkbox,
 .radiobox {
-    margin-bottom: 15px;
+    margin-bottom: 15px;     
 }
 
 .checkbox label,
 .radiobox label {
     position: relative;
     padding-left: 30px;
-    cursor: pointer;
-    outline: none;
+    cursor: pointer;    
 }
 
 .input,
@@ -78,8 +78,7 @@
 .radiobox label:after {
     content: " ";
     position: absolute;
-    display: block;
-    outline: none;
+    display: block;    
 }
 
 .checkbox label:before {
@@ -108,8 +107,7 @@
     opacity: 1;
 }
 
-.input:checked:hover + label:hover,
-.input:checked:focus + label:focus {
+.input:checked:hover + label:hover {
     opacity: 1;
     text-decoration: underline;
 }
@@ -119,8 +117,8 @@
 }
 
 .radiobox label:before {
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     top: 0;
     left: 0;
     border: 2px solid #C29974;
@@ -128,8 +126,8 @@
 }
 
 .radiobox label:after {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     top: 5px;
     left: 5px;
     background: #C29974;
@@ -141,21 +139,27 @@
     opacity: 1;
 }
 
-.radio:checked:hover + label:hover,
-.radio:checked:focus + label:focus {
+.radio:checked:hover + label:hover {
     opacity: 1;
     text-decoration: underline;
+}
+
+.radio:disabled + label {
+    opacity: .7;
 }
 
 .form-radio-btn {
 	display: inline-block;
 	margin: 0 -5px;
-    padding: 0;
-    outline: none; 
+    padding: 0;    
 }
 
 .form-radio-btn input {
 	display: none;
+}
+
+.amount {
+    max-width: 80px;
 }
 
 .form-radio-btn label {
@@ -168,8 +172,7 @@
     background:#fff;       
 }
 
-.form-radio-btn input:hover + label,
-.form-radio-btn input:focus + label {
+.form-radio-btn input:hover + label {
 	background: #EDDEEB;
     color: #877379;      
 }
@@ -187,16 +190,7 @@
 /* Products */
 
 .products {
-    margin-bottom: 50px;
-}
-
-.products-title {
-    font-family: "Montserrat", Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 38px;
-    line-height: 46px;    
+    margin-bottom: 53px;
 }
 
 .products-list {
@@ -209,13 +203,13 @@
     -webkit-flex-wrap: wrap;
         -moz-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin: 0 -10px -20px;    
+    margin: 0 -10px -4px;    
 }
 
 .products-item {
     width: 380px;
     margin-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     overflow: hidden;    
 }
 
@@ -236,8 +230,7 @@
 }
 
 .container-link {
-    position: relative;  
-    outline:none;    
+    position: relative;        
 }
 
 .container-link:before,
@@ -286,9 +279,7 @@
 }
 
 .container-link:hover:before,
-.container-link:hover:after,
-.container-link:focus:before,
-.container-link:focus:after {
+.container-link:hover:after {
     opacity: 1;
     cursor: pointer;    
 }
