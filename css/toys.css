@@ -19,12 +19,12 @@
     width: 100%;
     padding-top: 42px;
     padding-left: 73px;
-    padding-bottom: 20px;
+    padding-bottom: 20px;    
 }
 
 .filter-form fieldset {
     border: none;
-    margin-left: -34px;
+    margin-left: -34px;    
 }
 
 .filter-form legend {
@@ -35,17 +35,13 @@
 }
 
 .box-range {
-    display: flex;
+    display: flex;   
 }
 
 .number-box {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-}
-
-.checkbox {
-    bottom: 15px;
 }
 
 .filter-form legend {
@@ -57,7 +53,7 @@
 
 .checkbox,
 .radiobox {
-    margin-bottom: 15px;     
+    margin-bottom: 15px;       
 }
 
 .checkbox label,
@@ -151,7 +147,7 @@
 .form-radio-btn {
 	display: inline-block;
 	margin: 0 -5px;
-    padding: 0;    
+    padding: 0;      
 }
 
 .form-radio-btn input {
